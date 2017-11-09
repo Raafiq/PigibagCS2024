@@ -1,0 +1,18 @@
+.checked {
+    color: orange;
+}
+
+#wantThisToo {
+	background-color: #8dc0d3;
+	border-color: #8dc0d3;
+}
+
+#offerToHelpBuy {
+	background-color: #7fd97f;
+	border-color: #7fd97f;
+}
+
+#addToWishList {
+	background-color: #cccccc;
+	border-color: #cccccc;
+}
