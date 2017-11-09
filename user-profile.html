@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PiGiBag</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--our css files-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/user-profile.css">
+</head>
+
+<body>
+	<div id="wrapper" class="container-fluid">
+		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="navbar-header col-md-4 col-sm-4 col-xs-12">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+					</div>
+					
+					<div class="collapse navbar-collapse " id="navbarCollapse">
+						<ul class="nav navbar-nav" style="float:right">
+							<li class="active"><a href="#" target="_blank">Home</a></li>
+							<li><a href="#">Browse</a></li>
+							<li><a href="#">Post Request</a></li>
+							<li><a href="#">Post Trip</a></li>
+							<li><a href="#">My Account</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+		
+		<div id="user-profile" class="row">
+			<div class="content col-md-8 col-md-offset-2">
+				<p class="title">My Account</p>
+				<div class="row">
+					<div class="user-pic col-md-2">
+						<img src="images/user-pic.png">
+					</div>
+					<div class="user-details col-md-10" style="background:white">
+						<div class="row">
+							<div class="col-md-8">
+								<p>Kitty_CS2024</p>
+								<p id="joined-date">Joined Sept 2017</p>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star-o"></span>
+								<span class="fa fa-star-o"></span>
+								<span>(999 reviews)</span>
+								<div>
+									<span><img src="images/trusted.png"></span>
+									<span><img src="images/badge.png"></span>
+								</div>
+								<p id="delivery-rate">Delivery Rate</p>
+							</div>
+							<div class="col-md-4">
+								<button class="about-us-btn">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									<span>Edit</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2">
+					</div>
+					<div class="col-md-9">
+						<div id="about-me">
+							<br>
+							<p class="about-me-header">About me</p>
+							<p class="about-me-detail">I enjoy lazing around at home and sleeping on my owner's face when he's asleep.
+							I love anyone that scratches that itch on my head.
+							During my travels, I wish that people would overfeed me when my owner's not looking.
+							</p>
+							<br>
+							<p class="about-me-header">Activity</p>
+							<div class="activity row">
+								<div class="col-md-12 col-md-offset-0 col-xs-8 col-xs-offset-4">
+									<img src="images/trips.png" style="padding-top:10px">
+									<span class="activity-amount">1,200</span>
+									<br>
+									<span class="activity-name">Trips</span>
+								</div>
+							</div>
+							<div class="activity row">
+								<div class="col-md-12 col-md-offset-0 col-xs-8 col-xs-offset-4">
+									<img src="images/purchases.png" >
+									<span class="activity-amount">1,200</span>
+									<br>
+									<span class="activity-name">Purchases</span>
+								</div>
+							</div>
+							<div class="activity row">
+								<div class="col-md-5 col-md-offset-0 col-xs-8 col-xs-offset-4">
+									<img src="images/followers.png">
+									<div class="float-left">
+										<span class="activity-amount">1,200</span>
+										<br>
+										<span class="activity-name">Followers</span>
+									</div>
+								</div>
+								<div class="col-md-7 col-md-offset-0 col-xs-6 col-xs-offset-6">
+									<span class="activity-amount">900</span>
+									<br>
+									<span class="activity-name">Following</span>
+									<div style="clear:both"></div>
+								</div>
+							</div>
+							<br>
+							<br>
+							<p class="about-me-header">E-Wallet</p>
+							<div class="activity row">
+								<div class="col-md-9 col-md-offset-0 col-xs-8 col-xs-offset-3">
+									<img src="images/wallet.png">
+									<div class="float-left" id="wallet-detail">
+										<span class="activity-amount">S$ 999.99</span>
+										<br>
+										<span class="activity-name">What you have</span>
+									</div>
+								</div>
+								<div class="col-md-3 col-md-offset-0 col-xs-3 col-xs-offset-3" id="top-up-div">
+									<button class="about-us-btn">
+										<span>Top-up</span>
+									</button>
+								</div>
+							</div>
+							<br>
+							<br>
+							<div class="section-header">
+								<p>Wishlist</p>
+								<div class="section-header-underline">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="wishlist" class="row">
+			<div class="col-md-9 col-md-offset-2">
+				<div class="row">
+					<div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+						<img src="images/listing-1.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5">
+						<img src="images/listing-2.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+						<img src="images/listing-3.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5">
+						<img src="images/listing-4.png">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+						<img src="images/listing-5.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5">
+						<img src="images/listing-6.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+						<img src="images/listing-7.png">
+					</div>
+					<div class="col-md-3 col-md-offset-0 col-xs-5">
+						<img src="images/listing-8.png">
+					</div>
+				</div>
+			</div>
+			<div class="show-more">
+				<button>Show all</button>
+			</div
+		</div>
+		
+	</div>
+	<div id="footer">
+			Hello world
+	</div>
+</body>
+</html>]
