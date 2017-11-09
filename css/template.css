@@ -1,0 +1,93 @@
+/* font imports */
+@font-face {
+    font-family: pumpkin;
+    src: url(../font/DK%20SPICED%20PUMPKIN.OTF);
+}
+@font-face {
+    font-family: opensans regular;
+    src: url(../font/OPENSANS-REGULAR.TTF);
+}
+@font-face {
+    font-family: opensans semibold;
+    src: url(../font/OPENSANS-SEMIBOLD.TTF);
+}
+@font-face {
+    font-family: opensans bold;
+    src: url(../font/OPENSANS-BOLD.TTF);
+}
+
+body{
+	background-color:white;
+	padding-top:5.783308931185944vw;
+}
+.container-fluid{
+	padding:0px;
+}
+
+#wrapper{	
+	min-height:738px;
+}
+/* nav bar */
+
+.navbar-header{
+	margin-left:6.328125vw;
+}
+.navbar-header a{
+	padding:0;
+}
+.navbar-header a>img{
+	height:3.046875vw;
+	margin-top:0.859375vw;
+}
+.navbar-fixed-top .nav{
+	margin-right:5.625vw;
+}
+.navbar-fixed-top .nav li>a{
+	font-size: 1.328125vw;
+	text-transform:uppercase;
+	font-family:opensans semibold;
+}
+.navbar-fixed-top li{
+	margin-top:4.5px;
+}
+.navbar-fixed-top{
+	background-color:#ffffff;
+}
+#myNavbar .row{
+	box-shadow: 0 0 0.78125vw 0 #BDB097;
+	padding: 0.78125vw 0;
+}
+h3{
+	font-family:opensans semibold;
+}
+#footer{
+	height:16.5625vw;
+	background-color:black;
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	right:0;
+	color:white;
+}
+
+@media screen and (max-width: 770px) {
+	
+	body{
+		padding-top:10.783309vw !important;
+	}
+	.navbar-header button{
+		margin-right:10.936170212765957vw;
+	}
+	#navbarCollapse{
+		background-color:white;
+	}
+	.navbar-header a>img{
+		height:6.046875vw !important;
+	}
+	#footer{
+		display:none;
+	}
+	.navbar-fixed-top .nav li>a{
+		font-size: 2.328125vw !important;
+	}
+}

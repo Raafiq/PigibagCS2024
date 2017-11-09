@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>PiGiBag</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--our css files-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+</head>
+
+<body>
+<div id="wrapper" class="container-fluid">
+		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="navbar-header col-md-4 col-sm-4 col-xs-12">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+					</div>
+					
+					<div class="collapse navbar-collapse " id="navbarCollapse">
+						<ul class="nav navbar-nav" style="float:right">
+							<li class="active"><a href="#" target="-blank">Home</a></li>
+							<li><a href="#">Browse</a></li>
+							<li><a href="#">Post Request</a></li>
+							<li><a href="#">Post Trip</a></li>
+							<li><a href="#">My Account</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+<div class="main-section">
+   <div class="container">
+      <div class="chat-container">
+         <div class="col-sm-3 chat-sidebar">
+    	 <div class="row">
+				<div id="pane-list">
+					<img src="images/user-pic.png" class="img-circle">
+					<div id="pane-list-options">
+						<i class="fa fa-comments" aria-hidden="true" data-toggle="tooltip" title="New Chat"></i>
+						<i class="fa fa-ellipsis-v" aria-hidden="true" data-toggle="tooltip" title="Setting"></i>
+					</div>
+				</div>	
+				<div id="custom-search-input">
+				   <div class="input-group col-md-12">
+					  <input type="text" class="  search-query form-control" placeholder="Conversation" />
+					  <button class="btn btn-danger" type="button">
+					  <span class=" glyphicon glyphicon-search"></span>
+					  </button>
+				   </div>
+				</div>
+				<div class="dropdown all-conversation">
+				   
+				   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					  <li><a href="#"> All Conversation </a>  <ul class="sub-menu- list-unstyled">
+					  <li><a href="#"> All Conversation </a> </li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li><a href="#">Separated link</a></li>
+				   </ul>
+				   </li>
+					  <li><a href="#">Another action</a></li>
+					  <li><a href="#">Something else here</a></li>
+					  <li><a href="#">Separated link</a></li>
+				   </ul>
+				</div>
+				<div class="member-list scrollbar scrollbar-style">
+				   <ul class="list-unstyled">
+					  <li class="left clearfix active-chat">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-1.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Ming Gerardo</strong> <strong class="pull-right">
+							   12:45PM</strong>
+							</div>
+							
+						 </div>
+					  </li>
+					  <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-2.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Kalea Vega</strong> <strong class="pull-right ">
+							   11:47AM</strong>
+							</div>
+							
+						 </div>
+					  </li>
+					  <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-3.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Nedelko Dilip</strong> <strong class="pull-right">
+							   09:45AM</strong>
+							</div>
+							
+						 </div>
+					  </li>
+							  <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-4.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Svyatoslav Æbbe</strong> <strong class="pull-right">
+							   02:01AM</strong>
+							</div>
+						   
+						 </div>
+					  </li>
+							  <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-5.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Quiana Tennyson</strong> <strong class="pull-right">
+							   11/11/2017</strong>
+							</div>
+						   
+						 </div>
+					  </li>
+					<li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-6.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Amélia Luka</strong> <strong class="pull-right">
+							   07/11/2017</strong>
+							</div>
+						 </div>
+					  </li>
+					<li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-7.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Barbara Elisabetta</strong> <strong class="pull-right">
+							   04/11/2017</strong>
+							</div>
+						 </div>
+					  </li>
+					 <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-8.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Docia Prokopiy</strong> <strong class="pull-right">
+							   03/11/2017</strong>
+							</div>
+						 </div>
+					  </li>
+					 <li class="left clearfix">
+						 <span class="chat-img pull-left">
+						 <img src="images/chatpic-9.png" alt="User Avatar" class="img-circle">
+						 </span>
+						 <div class="chat-body clearfix">
+							<div class="header-sec">
+							   <strong class="primary-font">Trai Minerva</strong> <strong class="pull-right">
+							   03/11/2017</strong>
+							</div>
+						 </div>
+					  </li>
+				   </ul>
+				</div>
+			</div>
+         </div>
+         <!--chat-sidebar-->
+		 
+		 
+         <div class="col-sm-9 message-section">
+		 <div class="row">
+		 <div class="new-message-head">
+			<div class="current-recipient pull-left">
+				 <span class="chat-img pull-left">
+					 <img src="images/chatpic-1.png" alt="User Avatar" class="img-circle">
+				</span>
+				<div class="header-sec">
+				  <strong class="primary-font">Ming Gerardo</strong>
+			   </div>
+			</div>
+			<div class="pull-right">
+				<div class="dropdown">
+				  <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-cogs" aria-hidden="true"></i>  Setting
+					<span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Logout</a></li>
+				  </ul>
+				</div>
+			</div>
+		 </div><!--new-message-head-->
+		 
+		 <div class="chat-area scrollbar scrollbar-style">
+		 <ul class="list-unstyled">
+				<li class="left clearfix recipient-chat">
+                     <div class="chat-body1 clearfix">
+                        <p>Good morning! I'm the requester for product X. Is it possible to help me purchase 4 instead of 2? I'll update the post accordingly.</p>
+						<div class="chat-time pull-right">09:40AM</div>
+                     </div>
+                </li>
+				 <li class="left clearfix user-chat">
+                     <div class="chat-body1 clearfix pull-right">
+						<p>Sure no problem :3 ! I was planning to buy a bunch for myself too.</p>
+						<div class="chat-time pull-right">09:51AM</div>
+                     </div>
+                </li>
+				<li class="left clearfix recipient-chat">
+                     <div class="chat-body1 clearfix">
+						<p>Thank you so much. I've already updated the post. Please check if everything's ok.</p>
+						<div class="chat-time pull-right">11:11AM</div>
+                     </div>
+                </li>
+				<li class="left clearfix user-chat">
+                     <div class="chat-body1 clearfix pull-right">
+						<p>Yep looks fine to me!</p>
+						<div class="chat-time pull-right">11:40AM</div>
+                     </div>
+                </li>
+				<li class="left clearfix recipient-chat">
+                     <div class="chat-body1 clearfix">
+						<p>Sorry for the last minute changes and thank you again. Happy travels!</p>
+						<div class="chat-time pull-left">12:30PM</div>
+                     </div>
+                </li>
+				 </li>
+                <li class="left clearfix user-chat">
+                     <div class="chat-body1 clearfix pull-right">
+						<p>No worries and thx!</p>
+						<div class="chat-time pull-right">12:45PM</div>
+                     </div>
+                </li>
+				
+		 
+		 
+		 </ul>
+		 </div><!--chat-area-->
+          <div class="message-write">
+    	 <textarea class="form-control" placeholder="type a message"></textarea>
+		 <div class="clearfix"></div>
+		 <div class="chat-bottom"><a href="#" class="pull-left upload-btn"><i class="fa fa-cloud-upload" aria-hidden="true"></i>
+ Add Files</a>
+ <a href="#" class="pull-right btn btn-success">
+ Send</a></div>
+		 </div>
+		 </div>
+         </div> <!--message-section-->
+      </div>
+   </div>
+</div>
+</div>
+<div id="footer">
+			Hello world
+	</div>
+</body>
+</html>

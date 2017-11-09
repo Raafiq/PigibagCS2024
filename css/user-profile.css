@@ -1,0 +1,112 @@
+#user-profile .content{
+	font-size:24px;
+	font-family:opensans regular;
+}
+#user-profile .title{
+	font-family:opensans bold;
+	font-size:30px;
+}
+#user-profile .user-pic img{
+	width:100px;
+	height:100px;
+	background-color:white;
+	border-radius:50px;
+}
+#user-profile .about-us-btn{
+	outline:none;
+	margin:0;
+	background-color:white;
+	border:2px solid #8dc0d3;
+	color:#8dc0d3;
+	padding:0px;
+	border-radius:5px;
+	width:122px;
+	height:44px;
+}
+#user-profile .user-details p{
+	margin:0;
+}
+#joined-date{
+	color:#8dc0d3;
+}
+.checked{
+	color:#ffda44;
+}
+#delivery-rate{
+	color:#bfc3ba;
+}
+#about-me .about-me-header{
+	color:#243d5b;
+}
+#about-me .about-me-detail{
+	margin:0;
+	color:#8dc0d3;
+}
+.fa-paper-plane{
+	color:#8dc0d3;
+}
+#about-me .activity-amount{
+	font-size:30px;
+	font-family: opensans semibold;
+	color:#243d5b;
+}
+#about-me .activity{
+	margin-top: 36px;
+}
+#about-me .activity img{
+	float:left;
+	padding-right:22px;
+}
+#about-me .activity-name{
+	color:#8dc0d3;
+}
+.float-left{
+	float:left;
+}
+#top-up-div{
+	margin-top:50px;
+}
+#wallet-detail{
+	padding-top: 30px;
+	padding-left:38px;
+}
+.section-header{
+	margin-top: 67px;
+	text-align:center;
+}
+.section-header p{
+	font-size: 30px;
+	font-family: opensans bold;
+	margin-bottom:18px;
+	color:black; 
+}
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+	margin:0 auto;
+	margin-bottom:100px;
+}
+.show-more{
+	text-align:center;
+}
+.show-more button{
+	border:none;
+	background-color: #8dc0d3;
+	outline:none;
+	margin:0;
+	padding:0;
+	width:266px;
+	height:51px;
+	border-radius: 25px;
+	font-size:27.6px;
+	font-family:opensans bold;
+	color:white;
+	margin:32px 0;
+}
+
+@media screen and (max-width: 770px) {
+	.user-details, .user-pic,.title,p{
+		text-align:center !important;
+	}
+}
