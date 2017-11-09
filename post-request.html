@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>PiGiBag</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ 	<!-- CSS documents-->
+  	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+  	<link rel="stylesheet" type="text/css" href="css/post-request.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<!-- NAVIGATION BAR -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="navbar-fixed-top">
+				<div class="navbar-header">
+				  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+				</div>
+				<ul class="nav navbar-nav">
+				  <li><a href="#">Browse</a></li>
+				  <li><a href="#">Post Request</a></li>
+				  <li><a href="#">Post Trip</a></li>
+				  <li><a href="#">My Account</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" style="padding-top: 60px;">
+		<h2>Post Request</h2>
+		<h3>1. Item Details</h3>
+
+		<div class="form-group">
+		   <label for="usr">Item Name</label>
+		   <input type="text" class="form-control" id="usr">
+		</div>
+
+		<div class="form-group">
+		   <label for="qtty">Quantity of the item</label>
+		   <input type="text" class="form-control" id="qtty">
+		</div>
+
+		<div class="form-group">
+		   <label for="description">Item Description</label>
+		   <p>Detailed description of item e.g. how to buy, size, quantity, colour, packaging</p>
+		   <textarea class="form-control" rows="5" id="description"></textarea>
+		</div>
+
+		<div class="form-group">
+		   <label for="qtty">Category</label>
+		   <select class="form-control" placeholder="Choose your category" id="category">
+    			<option>Food and Drinks</option>
+			    <option>Collectibles</option>
+			    <option>Lifestyle Gadgets</option>
+			    <option>Ladies' Fashion and Accessories</option>
+			    <option>Men's Fashion and Accessories</option>
+			    <option>Sports</option>
+			    <option>Beauty Products</option>
+			    <option>Household Products</option>
+			    <option>Mums and Babies</option>
+			    <option>Pets</option>
+			    <option>Games</option>
+			    <option>Other</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+		   <label for="usr">Upload Picture</label>
+		   <button class="btn btn-success" id="uploadButton" data-loading-text="Opening file directory...">Upload</button>
+		</div>
+
+		<div class="form-group">
+		   <label for="url">URL</label>
+		   <input type="text" class="form-control"  placeholder="put the url here" id="url">
+		</div>
+
+		<h3>2. Country Information</h3>
+		<p>Choose country to buy from</p>
+		<div class="form-group">
+		   <div class="form-group">
+				<select class="form-control" placeholder="Search country" id="searchcountry">
+					<option>Singapore</option>
+					<option>Indonesia</option>
+					<option>Korea</option>
+					<option>United States</option>
+				</select>
+			</div>
+		</div>
+
+		<h3>3. Collection Method</h3>
+		<div class="form-group">
+			<label for="perishable_value">Perishable?</label>
+			<br>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary btn-custom perishable">
+	    			<input type="radio" name="perishable" class="item-perishable" value="yes" autocomplete="off"><span>Yes</span>
+	    		</label>
+
+	    		<label class="btn btn-primary btn-custom perishable active">
+	    			<input type="radio" name="perishable" class="item-perishable" value="no" autocomplete="off"><span>No</span>
+	    		</label>
+	  		</div>
+	  	</div>
+
+	  	<div class="form-group">
+			<label for="fragile_value">Fragile?</label>
+			<br>
+			<div class="btn-group" data-toggle="buttons">
+				<label class="btn btn-primary btn-custom perishable">
+	    			<input type="radio" name="perishable" class="item-perishable" value="yes" autocomplete="off"><span>Yes</span>
+	    		</label>
+
+	    		<label class="btn btn-primary btn-custom perishable active">
+	    			<input type="radio" name="perishable" class="item-perishable" value="no" autocomplete="off"><span>No</span>
+	    		</label>
+	  		</div>
+	  	</div>
+
+	  	<div class="form-group">
+			<label for="item_size">Item size</label>
+			<br>
+			<div class="btn-group width-flex" data-toggle="buttons">
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="itemSize" value="small" id="itemSize1" autocomplete="off">
+		  			<p> "Small" <br> "L + W + H < 50 cm" <br> "Max 2 kg" </p>
+		  		</label>
+
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="itemSize" value="medium" id="itemSize2" autocomplete="off">
+		  			<p> "Medium" <br> "L + W + H < 120 cm" <br> "Max 6 kg" </p>
+		  		</label>
+
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="itemSize" value="large" id="itemSize3" autocomplete="off">
+		  			<p> "Large" <br> "L + W + H < 200 cm" <br> "Max 14 kg" </p>
+		  		</label>
+
+		  	</div>
+	  	</div>
+
+	  	<div class="form-group">
+			<label for="collection_option">Collection options</label>
+			<br>
+			<div class="btn-group width-flex" data-toggle="buttons">
+		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="collectionOption" value="self-collect" id="self-collect" autocomplete="off">
+		  			<p> Self collection </p>
+		  		</label>
+
+		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="collectionOption" value="something-collect" id="something-collect" autocomplete="off">
+		  			<p> Something here </p>
+		  		</label>
+
+		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  			<input type="radio" name="collectionOption" value="large" id="itemSize3" autocomplete="off">
+		  			<p> Something here </p>
+		  		</label>
+		  	</div>
+	  	</div>
+
+	  	<h3>4. Price</h3>
+
+	  	<div class="row">
+		  	<p>Price you are willing to pay</p>
+		  	<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  	<div class="input-group">
+					<span class="input-group-addon">SGD</span>
+					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+					<span class="input-group-addon">.00</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<p>Service fee</p>
+			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  	<p> SGD 2.00 </p>
+			</div>
+		</div>
+
+		<div class="row">
+			<p>Total fee</p>
+			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  	<p> SGD TOTAL </p>
+			</div>
+		</div>
+
+
+		<button class="btn btn-success" id="postTripButton" data-loading-text="Processing..."> Submit </button>
+
+	</div>
+
+
+
+	<!-- FOOTER -->
+	<div id="footer">
+		
+		
+	</div>
+	
+</body>
+</html>
+
+</html>
