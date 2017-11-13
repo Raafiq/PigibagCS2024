@@ -11,21 +11,24 @@
 }
 #pane-list-options{
 	display:inline-block;
-	font-size:30px;
+	font-size:24px;
 	float:right;
 	margin-top:10px;
 	cursor:pointer;
-}
-#pane-list-options i{
-	margin-right:20px;
+	margin-right:10px;
 }
 #pane-list-options .dropdown{
 	display:inline-block;
 }
-#pane-list-options .dropdown button{
+#pane-list-options button{
 	padding:0;
 	border:none;
 	background:none;
+	padding: 5px 10px;
+	outline:none;
+}
+#pane-list-options button:active,#pane-list-options button:focus{
+	background-color:#dddddd;
 }
 #custom-search-input {
 	background: #e8e6e7 none repeat scroll 0 0;
@@ -118,9 +121,6 @@ overflow: visible;
 .member-list .contact-sec {
 margin-top: 3px;
 }
-.member-list li {
-padding: 6px;
-}
 .member-list ul {
 border: 1px solid #dddddd;
 }
@@ -166,6 +166,10 @@ width: 100%;
 .new-message-head button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
+  padding:8px;
+}
+.new-message-head button:hover,.new-message-head button:focus{
+	background-color:#dddddd;
 }
 .new-message-head {
   background: #f5f3f3 none repeat scroll 0 0;
@@ -250,8 +254,7 @@ width: 100%;
   width:100%;
 }
 .member-list li:hover {
-  background: #428bca none repeat scroll 0 0;
-  color: #fff;
+  background: #eeeeee none repeat scroll 0 0;
   cursor:pointer;
 }
 .scrollbar-style::-webkit-scrollbar-track
