@@ -1,5 +1,5 @@
 .main-section{
-	margin-top:50px;
+	margin-top:4%;
 	font-family:opensans regular;
 }
 #pane-list{
@@ -14,17 +14,23 @@
 	font-size:30px;
 	float:right;
 	margin-top:10px;
+	cursor:pointer;
 }
 #pane-list-options i{
 	margin-right:20px;
 }
-#pane-list-options .fa,#pane-list img{
-	cursor:pointer;
+#pane-list-options .dropdown{
+	display:inline-block;
+}
+#pane-list-options .dropdown button{
+	padding:0;
+	border:none;
+	background:none;
 }
 #custom-search-input {
 	background: #e8e6e7 none repeat scroll 0 0;
 	margin: 0;
-	padding: 10px;
+	padding: 2% 4%;
 }
 #custom-search-input .search-query {
 	background: #fff none repeat scroll 0 0 !important;
@@ -45,7 +51,7 @@
 	padding: 2px 5px;
 	position: absolute;
 	right: 0;
-	z-index: 9999;
+	z-index: 4;
 }
 .search-query:focus + button {
 z-index: 3;   
@@ -98,6 +104,9 @@ padding: 3px 20px;
 .member-list .chat-body {
 margin-left: 47px;
 margin-top: 0;
+}
+.member-list ul{
+	margin-bottom:0;
 }
 .current-recipient .header-sec{
 	margin-left:45px;
@@ -294,3 +303,9 @@ width: 100%;
 	border-color: #c5dee7 transparent transparent transparent;
 }
 
+@media screen and (max-width: 770px) {
+	
+	.message-section{
+		margin-top:4%
+	}
+}
