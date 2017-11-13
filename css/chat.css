@@ -198,7 +198,7 @@ width: 100%;
   width: 40px;
 }
 .chat-area .chat-body1 {
-  margin-left: 60px;
+  margin-left: 5%;
   max-width:65%;
   position:relative;
   margin-top:20px;
@@ -217,7 +217,7 @@ width: 100%;
 }
 .chat-area .user-chat .chat-body1 {
   margin-left: 0;
-  margin-right: 60px;
+  margin-right: 5%;
 }
 .chat-area li:last-child {
   padding-bottom: 10px;
