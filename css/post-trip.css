@@ -5,3 +5,58 @@
 	border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.container {
+	padding-bottom: 50px;
+}
+
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+}
+
+.btn.btn-success {
+	background-color: #8dc0d3;
+	color: #ffffff;
+	border-color: #8dc0d3;
+}
+
+.btn.btn-success:active {
+	background-color: #808F87;
+	color: #ffffff
+	border-color: #808F87;
+}
+
+.btn {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	border: 1px solid transparent;
+}
+
+.form-control {
+	border: 1px solid #8dc0d3;
+	width: 50%;
+}
+
+#content {
+	margin-top: 20px;
+}
+
+
+h2 {
+	font-family: opensans semibold;
+}
+
+h3 {
+	font-family: opensans regular;
+}
+
+p {
+	font-family: opensans bold;
+}
