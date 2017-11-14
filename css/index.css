@@ -88,7 +88,6 @@
 }
 #why-us .row{
 	margin:0;
-	width:73%;
 	margin: 31px auto 0;
 }
 #why-us .row div{
@@ -109,7 +108,7 @@
 
 /*by countries*/
 #browse-by-countries{
-	min-height:982px;
+	min-height:942px;
 	overflow:hidden;
 }
 #browse-by-countries .section-content{
@@ -117,7 +116,6 @@
 }
 #browse-by-countries .row{
 	margin:0;
-	width:73%;
 	margin: 20px auto 0;
 }
 #browse-by-countries .row div{
@@ -130,6 +128,10 @@
 #browse-by-countries .row div p{
 	font-family:opensans regular;
 	font-size:13px;
+}
+#browse-by-countries img{
+	max-height:100%;
+	max-width:100%;
 }
 .show-more{
 	text-align:center;
@@ -156,14 +158,10 @@
 	overflow:hidden;
 }
 #popular-requests ul{
-	width:70%;
-	margin:auto;
 	margin-top:29px;
 	
 }
 #popular-requests .section-content{
-	width:73%;
-	margin:auto;
 	margin-top:25px;	
 }
 #popular-requests li>a{
@@ -172,6 +170,10 @@
 	font-family:opensans regular;
 	padding-right:27px;
 	padding-left:27px;
+}
+#popular-requests img{
+	max-height:100%;
+	max-width:100%;
 }
 
 .nav-tabs{
@@ -223,6 +225,7 @@
 }
 #reviews-carousel .row div{
 	text-align:center;
+	margin-bottom:20px;
 }
 #reviews-carousel .row div h3{
 	font-family:opensans semibold;
@@ -278,9 +281,6 @@
 }
 @media screen and (max-width: 770px) {
 
-	#reviews-carousel .row div{
-		margin-bottom:20px;
-	}
 	#myCarousel .search-box{
 		bottom:0;
 		position:relative;
