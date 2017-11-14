@@ -62,13 +62,39 @@ h3{
 	font-family:opensans semibold;
 }
 #footer{
-	height:16.5625vw;
-	background-color:black;
-	overflow:hidden;
-	position:absolute;
-	left:0;
-	right:0;
+	background-color:#000000;
 	color:white;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+#footer h3{
+	text-transform: uppercase;
+	font-size: 1.328125vw;
+	font-family:opensans semibold;
+}
+
+#footer p{
+	color: #ffffff;
+}
+
+#footer a {
+	color: #ffffff;
+}
+
+#footer a:visited{
+	color: grey;
+}
+
+#footer i {
+	color: white;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#footer img {
+	height: 55px;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 770px) {
