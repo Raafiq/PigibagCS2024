@@ -1,3 +1,13 @@
+.container {
+	padding-bottom: 50px;
+}
+
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+}
+
 .btn-custom.btn-primary.active {
 	background-color: #8dc0d3;
 	color: #ffffff;
@@ -10,6 +20,18 @@
 	border-color: #8dc0d3;
 }
 
+.btn.btn-success {
+	background-color: #8dc0d3;
+	color: #ffffff;
+	border-color: #8dc0d3;
+}
+
+.btn.btn-success:active {
+	background-color: #808F87;
+	color: #ffffff
+	border-color: #808F87;
+}
+
 .btn {
 	display: inline-block;
 	margin-bottom: 0px;
@@ -19,4 +41,40 @@
 	white-space: nowrap;
 	vertical-align: middle;
 	border: 1px solid transparent;
+}
+
+.input-group-addon {
+	background-color: #8dc0d3;
+	color: #ffffff;
+	border-color: #8dc0d3;
+	font-family: opensans bold;
+}
+
+.form-control {
+	border: 1px solid #8dc0d3;
+}
+
+h2 {
+	font-family: opensans semibold;
+}
+
+h3 {
+	font-family: opensans regular;
+}
+
+label {
+	font-family: opensans bold;
+}
+
+p {
+	font-family: opensans regular;
+}
+
+#item-type a {
+	font-family: opensans regular;
+	color: #8dc0d3;
+}
+
+#price p {
+	font-family: opensans bold;
 }

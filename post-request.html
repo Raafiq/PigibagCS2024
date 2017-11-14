@@ -48,16 +48,17 @@
 
 	<div class="container">
 		<h2>Post Request</h2>
+		<div class="section-header-underline"> </div>
 		<h3>1. Item Details</h3>
 
 		<div class="form-group">
-		   <label for="usr">Item Name</label>
-		   <input type="text" class="form-control" id="usr">
+		   <label>Item Name</label>
+		   <input type="text" class="form-control">
 		</div>
 
 		<div class="form-group">
-		   <label for="qtty">Quantity of the item</label>
-		   <input type="text" class="form-control" id="qtty">
+		   <label>Quantity of the item</label>
+		   <input type="number" name="quantity" min="1" class="form-control">
 		</div>
 
 		<div class="form-group">
@@ -107,107 +108,138 @@
 			</div>
 		</div>
 
-		<h3>3. Collection Method</h3>
+		<h3>3. Collection Details</h3>
 		<div class="form-group">
 			<label for="perishable_value">Perishable?</label>
+			<a href="#whatisperishable" data-toggle="collapse">Click here for perishable item definition and policy</a>
+
+			<div id="whatisperishable" class="collapse">
+				<p> Item that's likely to decay or go bad quickly.
+					<br>
+					Please be aware of lifespan of the item that you order, and make sure the traveller are aware about it.
+					<br>
+					Add more information in the description for better estimation.
+					<br>
+					If you fail to take the item after its expiry date, Pigibag has the right to destroy it.
+				</p>
+			</div>
+
 			<br>
 			<div class="btn-group" data-toggle="buttons">
 				<label class="btn btn-primary btn-custom perishable">
-	    			<input type="radio" name="perishable" class="item-perishable" value="yes" autocomplete="off"><span>Yes</span>
+	    			<input type="radio"><span>Yes</span>
 	    		</label>
 
 	    		<label class="btn btn-primary btn-custom perishable active">
-	    			<input type="radio" name="perishable" class="item-perishable" value="no" autocomplete="off"><span>No</span>
+	    			<input type="radio"><span>No</span>
 	    		</label>
 	  		</div>
 	  	</div>
 
-	  	<div class="form-group">
-			<label for="fragile_value">Fragile?</label>
-			<br>
-			<div class="btn-group" data-toggle="buttons">
-				<label class="btn btn-primary btn-custom perishable">
-	    			<input type="radio" name="perishable" class="item-perishable" value="yes" autocomplete="off"><span>Yes</span>
-	    		</label>
+	  	<div id="item-type">
+		  	<div class="form-group">
+				<label for="fragile_value">Fragile?</label>
+				<a href="#whatisfragile" data-toggle="collapse">Click here for fragile item definition and policy</a>
 
-	    		<label class="btn btn-primary btn-custom perishable active">
-	    			<input type="radio" name="perishable" class="item-perishable" value="no" autocomplete="off"><span>No</span>
-	    		</label>
-	  		</div>
-	  	</div>
+				<div id="whatisfragile" class="collapse">
+					<p> Item that's easily damaged.
+						<br>
+						Do alert your traveller and tell them your special request (if the item is not supposed to be put in plane baggage)
+						<br>
+						Pigibag is not responsible for any damage happened if the item is found broken upon delivery.
+					</p>
+				</div>
+				<br>
+				<div class="btn-group" data-toggle="buttons">
+					<label class="btn btn-primary btn-custom perishable">
+		    			<input type="radio" name="perishable" class="item-perishable" value="yes" autocomplete="off"><span>Yes</span>
+		    		</label>
 
+		    		<label class="btn btn-primary btn-custom perishable active">
+		    			<input type="radio" name="perishable" class="item-perishable" value="no" autocomplete="off"><span>No</span>
+		    		</label>
+		  		</div>
+		  	</div>
+
+		  	<div class="form-group">
+				<label for="item_size">Item Size</label>
+				<br>
+				<div class="btn-group width-flex" data-toggle="buttons">
+			  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  			<input type="radio" name="itemSize" value="small" id="itemSize1" autocomplete="off">
+			  			<p> "Small" <br> "L + W + H < 50 cm" <br> "Max 2 kg" </p>
+			  		</label>
+
+			  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  			<input type="radio" name="itemSize" value="medium" id="itemSize2" autocomplete="off">
+			  			<p> "Medium" <br> "L + W + H < 120 cm" <br> "Max 6 kg" </p>
+			  		</label>
+
+			  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
+			  			<input type="radio" name="itemSize" value="large" id="itemSize3" autocomplete="off">
+			  			<p> "Large" <br> "L + W + H < 200 cm" <br> "Max 14 kg" </p>
+			  		</label>
+
+			  	</div>
+		  	</div>
+		  </div>
 	  	<div class="form-group">
-			<label for="item_size">Item size</label>
+			<label>Collection Information</label>
 			<br>
 			<div class="btn-group width-flex" data-toggle="buttons">
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
-		  			<input type="radio" name="itemSize" value="small" id="itemSize1" autocomplete="off">
-		  			<p> "Small" <br> "L + W + H < 50 cm" <br> "Max 2 kg" </p>
+		  		<label class="btn btn-primary btn-custom item-size col-md-12 col-lg-12 col-sm-12 col-xs-12">
+		  			<input type="radio" name="collectionOption" autocomplete="off">
+		  			<p> Collection address:
+		  				<br>
+		  				Software Engineering Laboratory
+		  				<br>
+						S2-B4-04
+						<br>
+						50 Nanyang Avenue
+						<br>
+						Singapore 639798
+					</p>
 		  		</label>
-
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
-		  			<input type="radio" name="itemSize" value="medium" id="itemSize2" autocomplete="off">
-		  			<p> "Medium" <br> "L + W + H < 120 cm" <br> "Max 6 kg" </p>
-		  		</label>
-
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
-		  			<input type="radio" name="itemSize" value="large" id="itemSize3" autocomplete="off">
-		  			<p> "Large" <br> "L + W + H < 200 cm" <br> "Max 14 kg" </p>
-		  		</label>
-
 		  	</div>
 	  	</div>
 
-	  	<div class="form-group">
-			<label for="collection_option">Collection options</label>
-			<br>
-			<div class="btn-group width-flex" data-toggle="buttons">
-		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
-		  			<input type="radio" name="collectionOption" value="self-collect" id="self-collect" autocomplete="off">
-		  			<p> Self collection </p>
-		  		</label>
-
-		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
-		  			<input type="radio" name="collectionOption" value="something-collect" id="something-collect" autocomplete="off">
-		  			<p> Something here </p>
-		  		</label>
-
-		  		<label class="btn btn-primaty btn-custom item size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
-		  			<input type="radio" name="collectionOption" value="large" id="itemSize3" autocomplete="off">
-		  			<p> Something here </p>
-		  		</label>
-		  	</div>
-	  	</div>
-
-	  	<h3>4. Price</h3>
-
-	  	<div class="row">
+	  	<div id="price">
+		  	<h3>4. Price</h3>
 		  	<p>Price you are willing to pay</p>
-		  	<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-			  	<div class="input-group">
-					<span class="input-group-addon">SGD</span>
-					<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-					<span class="input-group-addon">.00</span>
+
+		  	<div class="row">
+			  	<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+				  	<div class="input-group">
+						<span class="input-group-addon">SGD</span>
+						<input type="text" class="form-control" placeholder="nearest dollar" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon">.</span>
+						<input type="text" class="form-control" placeholder="2 decimal place" aria-label="Decimal place">
+					</div>
 				</div>
 			</div>
-		</div>
-
-		<div class="row">
+			<br>
 			<p>Service fee</p>
-			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-			  	<p> SGD 2.00 </p>
+			<div class="row">
+				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+					<p class="form-control-static">SGD 2.00</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="row">
+			<br>
 			<p>Total fee</p>
-			<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-			  	<p> SGD TOTAL </p>
+			<div class="row">
+				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
+				  	<div class="input-group">
+						<span class="input-group-addon">SGD</span>
+						<input type="text" class="form-control" placeholder="nearest dollar" aria-label="Amount (to the nearest dollar)">
+						<span class="input-group-addon">.</span>
+						<input type="text" class="form-control" placeholder="2 decimal place" aria-label="Decimal place">
+					</div>
+				</div>
 			</div>
+			<br>
+			<br>
+			<button class="btn btn-success" id="postTripButton" data-loading-text="Processing..."> Submit </button>
 		</div>
-
-
-		<button class="btn btn-success" id="postTripButton" data-loading-text="Processing..."> Submit </button>
 
 	</div>
 
