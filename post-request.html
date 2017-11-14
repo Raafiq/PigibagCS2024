@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
  	<!-- CSS documents-->
-  	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+  	<link rel="stylesheet" type="text/css" href="css/template.css">
   	<link rel="stylesheet" type="text/css" href="css/post-request.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,22 +19,34 @@
 <body>
 	<!-- NAVIGATION BAR -->
 	<div class="container-fluid">
-		<div class="row">
-			<div class="navbar-fixed-top">
-				<div class="navbar-header">
-				  <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="navbar-header col-md-4 col-sm-4 col-xs-12">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+					</div>
+					
+					<div class="collapse navbar-collapse " id="navbarCollapse">
+						<ul class="nav navbar-nav" style="float:right">
+							<li class="active"><a href="#" target="-blank">Home</a></li>
+							<li><a href="#">Browse</a></li>
+							<li><a href="#">Post Request</a></li>
+							<li><a href="#">Post Trip</a></li>
+							<li><a href="#">My Account</a></li>
+						</ul>
+					</div>
 				</div>
-				<ul class="nav navbar-nav">
-				  <li><a href="#">Browse</a></li>
-				  <li><a href="#">Post Request</a></li>
-				  <li><a href="#">Post Trip</a></li>
-				  <li><a href="#">My Account</a></li>
-				</ul>
 			</div>
-		</div>
+		</nav>
 	</div>
 
-	<div class="container" style="padding-top: 60px;">
+	<div class="container">
 		<h2>Post Request</h2>
 		<h3>1. Item Details</h3>
 
@@ -128,17 +140,17 @@
 			<label for="item_size">Item size</label>
 			<br>
 			<div class="btn-group width-flex" data-toggle="buttons">
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
 		  			<input type="radio" name="itemSize" value="small" id="itemSize1" autocomplete="off">
 		  			<p> "Small" <br> "L + W + H < 50 cm" <br> "Max 2 kg" </p>
 		  		</label>
 
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
 		  			<input type="radio" name="itemSize" value="medium" id="itemSize2" autocomplete="off">
 		  			<p> "Medium" <br> "L + W + H < 120 cm" <br> "Max 6 kg" </p>
 		  		</label>
 
-		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12 active">
+		  		<label class="btn btn-primary btn-custom item-size col-md-4 col-lg-4 col-sm-4 col-xs-12">
 		  			<input type="radio" name="itemSize" value="large" id="itemSize3" autocomplete="off">
 		  			<p> "Large" <br> "L + W + H < 200 cm" <br> "Max 14 kg" </p>
 		  		</label>
