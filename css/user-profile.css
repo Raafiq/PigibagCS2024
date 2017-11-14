@@ -1,10 +1,13 @@
+#user-profile{
+	margin-top:2%;
+}
 #user-profile .content{
-	font-size:24px;
+	font-size:14px;
 	font-family:opensans regular;
 }
 #user-profile .title{
 	font-family:opensans bold;
-	font-size:30px;
+	font-size:24px;
 }
 #user-profile .user-pic img{
 	width:100px;
@@ -37,6 +40,7 @@
 }
 #about-me .about-me-header{
 	color:#243d5b;
+	font-size:16px;
 }
 #about-me .about-me-detail{
 	margin:0;
@@ -46,7 +50,7 @@
 	color:#8dc0d3;
 }
 #about-me .activity-amount{
-	font-size:30px;
+	font-size:20px;
 	font-family: opensans semibold;
 	color:#243d5b;
 }
@@ -75,7 +79,7 @@
 	text-align:center;
 }
 .section-header p{
-	font-size: 30px;
+	font-size: 24px;
 	font-family: opensans bold;
 	margin-bottom:18px;
 	color:black; 
@@ -85,7 +89,7 @@
 	width:118px;
 	background-color:#8dc0d3;
 	margin:0 auto;
-	margin-bottom:100px;
+	margin-bottom:5%;
 }
 .show-more{
 	text-align:center;
@@ -99,7 +103,7 @@
 	width:266px;
 	height:51px;
 	border-radius: 25px;
-	font-size:27.6px;
+	font-size:24px;
 	font-family:opensans bold;
 	color:white;
 	margin:32px 0;

@@ -19,6 +19,7 @@
 body{
 	background-color:white;
 	padding-top:5.783308931185944vw;
+	overflow-x:hidden;
 }
 .container-fluid{
 	padding:0px;

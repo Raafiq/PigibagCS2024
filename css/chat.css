@@ -1,5 +1,5 @@
 .main-section{
-	margin-top:50px;
+	margin-top:4%;
 	font-family:opensans regular;
 }
 #pane-list{
@@ -11,20 +11,29 @@
 }
 #pane-list-options{
 	display:inline-block;
-	font-size:30px;
+	font-size:24px;
 	float:right;
 	margin-top:10px;
-}
-#pane-list-options i{
-	margin-right:20px;
-}
-#pane-list-options .fa,#pane-list img{
 	cursor:pointer;
+	margin-right:10px;
+}
+#pane-list-options .dropdown{
+	display:inline-block;
+}
+#pane-list-options button{
+	padding:0;
+	border:none;
+	background:none;
+	padding: 5px 10px;
+	outline:none;
+}
+#pane-list-options button:active,#pane-list-options button:focus{
+	background-color:#dddddd;
 }
 #custom-search-input {
 	background: #e8e6e7 none repeat scroll 0 0;
 	margin: 0;
-	padding: 10px;
+	padding: 2% 4%;
 }
 #custom-search-input .search-query {
 	background: #fff none repeat scroll 0 0 !important;
@@ -45,7 +54,7 @@
 	padding: 2px 5px;
 	position: absolute;
 	right: 0;
-	z-index: 9999;
+	z-index: 4;
 }
 .search-query:focus + button {
 z-index: 3;   
@@ -99,6 +108,9 @@ padding: 3px 20px;
 margin-left: 47px;
 margin-top: 0;
 }
+.member-list ul{
+	margin-bottom:0;
+}
 .current-recipient .header-sec{
 	margin-left:45px;
 	margin-top:5%;
@@ -108,9 +120,6 @@ overflow: visible;
 }
 .member-list .contact-sec {
 margin-top: 3px;
-}
-.member-list li {
-padding: 6px;
 }
 .member-list ul {
 border: 1px solid #dddddd;
@@ -157,6 +166,10 @@ width: 100%;
 .new-message-head button {
   background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
+  padding:8px;
+}
+.new-message-head button:hover,.new-message-head button:focus{
+	background-color:#dddddd;
 }
 .new-message-head {
   background: #f5f3f3 none repeat scroll 0 0;
@@ -185,7 +198,7 @@ width: 100%;
   width: 40px;
 }
 .chat-area .chat-body1 {
-  margin-left: 60px;
+  margin-left: 5%;
   max-width:65%;
   position:relative;
   margin-top:20px;
@@ -204,7 +217,7 @@ width: 100%;
 }
 .chat-area .user-chat .chat-body1 {
   margin-left: 0;
-  margin-right: 60px;
+  margin-right: 5%;
 }
 .chat-area li:last-child {
   padding-bottom: 10px;
@@ -241,8 +254,7 @@ width: 100%;
   width:100%;
 }
 .member-list li:hover {
-  background: #428bca none repeat scroll 0 0;
-  color: #fff;
+  background: #eeeeee none repeat scroll 0 0;
   cursor:pointer;
 }
 .scrollbar-style::-webkit-scrollbar-track
@@ -294,3 +306,9 @@ width: 100%;
 	border-color: #c5dee7 transparent transparent transparent;
 }
 
+@media screen and (max-width: 770px) {
+	
+	.message-section{
+		margin-top:4%
+	}
+}
