@@ -24,39 +24,6 @@
 #myCarousel .carousel-inner .item{
 	overflow:hidden;
 }
-#myCarousel .carousel-inner .carousel-inner-overlay{
-	position:absolute;
-	z-index:1;
-	width:100%;
-	text-align:center;
-	top:22%;
-	line-height:1;
-}
-#myCarousel .carousel-inner .carousel-inner-overlay p{
-	color:white;
-	font-size:5.625vw;
-	font-family:pumpkin;
-	letter-spacing:0.15625vw;
-}
-#myCarousel .carousel-control{
-	background-image:none;
-	width:0px;
-	padding:43px;
-}
-#myCarousel .glyphicon{
-	margin:0;
-}
-#myCarousel .carousel-indicators{
-	bottom:0px;
-	margin-bottom: 37px;
-}
-#myCarousel .carousel-indicators li{
-	background-color: #b5b7b6;
-	border:none;
-}
-#myCarousel .carousel-indicators .active{
-	background-color: #68a2b8;
-}
 
 /* how it works */
 #how-it-works{
