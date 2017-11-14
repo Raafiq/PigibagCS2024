@@ -47,59 +47,51 @@
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
-			<li data-target="#myCarousel" data-slide-to="3"></li>
 		 </ol>
-		 <div class="search-box col-xs-12">
-				<div class="col-md-4 offset-md-4">
-					<form method="GET" id="searchForm" action="">
-						<div class="input-group">
-							<div class="dropdown">
-								<button class="dropdown-toggle" data-toggle="dropdown">
-								 Country
-								</button>
-								<ul class="dropdown-menu">
-								  <li><a href="#">Singapore</a></li>
-								  <li><a href="#">Korea</a></li>
-								  <li><a href="#">Japan</a></li>
-								</ul>
-							</div>	
-							<input type="text" name="query" placeholder="See what others are looking for">
-							<span class="input-group-btn">
-								<button type="submit"><i class="fa fa-search"></i></button>
-							</span>
+		 <div class="search-box row">
+				<form method="get" id="searchForm" action="search">
+				<div class="form-group col-md-6 col-md-push-3 col-xs-10 col-xs-push-1 margin-top-20">
+					<div class=input-group>
+						<div class="input-group-btn">
+				        	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country<span class="caret"></span></button>
+				        	<ul class="dropdown-menu">
+									<li><a href="#">Japan</a></li>
+									<li><a href="#">Korea</a></li>
+									<li><a href="#">China</a></li>
+									<li><a href="#">India</a></li>
+									<li><a href="#">Indonesia</a></li>
+									<li><a href="#">US</a></li>
+									<li><a href="#">Canada</a></li>
+									<li><a href="#">Brazil</a></li>
+									<li><a href="#">UK</a></li>
+									<li><a href="#">Spain</a></li>
+									<li><a href="#">France</a></li>
+									<li><a href="#">Italy</a></li>
+									<li><a href="#">Greece</a></li>
+									<li><a href="#">Australia</a></li>
+							</ul>>
+				        </div>
+						<input type="text" class="form-control" placeholder="Search...">
+						<div class="input-group-btn">
+							<button type="button" class="btn">Search</button>
 						</div>
-					</form>
+					</div>
 				</div>
-			</div>
+			</form>
+		</div>
 		  <!-- Wrapper for slides -->
-		 <div class="carousel-inner">
+		 <div class="carousel-inner hidden-xs">
 
-			<div class="item active hidden-xs">
-			   <div class="carousel-inner-overlay">
-				<p>Get travellors<br>to bring back overseas products</p>
-			  </div>
-			  <img src="images/homepage-background.jpg">
+			<div class="item active">
+			  <img src="images/homepage-background1.jpg">
 			</div>
 
-			<div class="item hidden-xs">
-			   <div class="carousel-inner-overlay">
-				<p>Get travellors<br>to bring back overseas products</p>
-			  </div>
-			  <img src="images/homepage-background.jpg">
+			<div class="item">
+			  <img src="images/homepage-background2.jpg">
 			</div>
 
-			<div class="item hidden-xs">
-			   <div class="carousel-inner-overlay">
-				<p>Get travellors<br>to bring back overseas products</p>
-			  </div>
-			  <img src="images/homepage-background.jpg">
-			</div>
-			
-			<div class="item hidden-xs">
-			   <div class="carousel-inner-overlay">
-				<p>Get travellors<br>to bring back overseas products</p>
-			  </div>
-			  <img src="images/homepage-background.jpg">
+			<div class="item">
+			  <img src="images/homepage-background3.jpg">
 			</div>
 		 </div>
 
@@ -132,23 +124,24 @@
 			<p class="section-header-detail">We connect you with travellers who can help you get your favourite overseas
 			<br>products and bring it back to you.</p>
 			<div class="section-content row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<img src="images/whyus-1.png">
 					<h3>Save and earn money</h3>
 					<p>Shop anywhere in the world without shipping fees.</p>
 					<p>Travellers get to turn extra luggage space into cash.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<img src="images/whyus-2.png">
 					<h3>Secure payment</h3>
 					<p>Payment is only released when requesters acknowledge delivery of requested-for item in good order.</p>
 				</div>
-				<div class="col-md-3">
+				<br>
+				<div class="col-md-3 col-xs-6">
 					<img src="images/whyus-3.png">
 					<h3>Safe transactions</h3>
 					<p>After placing the deposit, requesters will be unable to cancel the transaction. This ensures travellers will be reinbursed and rewarded.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-xs-6">
 					<img src="images/whyus-4.png">
 					<h3>Fast</h3>
 					<p>A request normally takes 1-2 weeks to be accepted and completed by a traveller.</p>
@@ -163,30 +156,30 @@
 			</div>
 			<div class="section-content">
 				<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-1.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-2.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-3.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-4.jpg">
 						</div>
 				</div>
 				<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-5.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-6.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-7.jpg">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/country-8.jpg">
 						</div>
 				</div>
@@ -214,30 +207,30 @@
 			  <div class="tab-content">
 				<div id="home" class="tab-pane fade in active">
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-1.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-2.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-3.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-5.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-6.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-7.png">
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-xs-6">
 							<img src="images/listing-8.png">
 						</div>
 					</div>
@@ -267,13 +260,13 @@
 				 <div class="carousel-inner">	
 					<div class="item active">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-1.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-2.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-0">
 								<img src="images/review-3.jpg">
 							</div>
 						</div>
@@ -281,13 +274,13 @@
 
 					<div class="item">
 					  <div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-1.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-2.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-0">
 								<img src="images/review-3.jpg">
 							</div>
 						</div>
@@ -295,13 +288,13 @@
 
 					<div class="item">
 					  <div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-1.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<img src="images/review-2.jpg">
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6 col-xs-offset-3 col-md-offset-0">
 								<img src="images/review-3.jpg">
 							</div>
 						</div>

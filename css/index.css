@@ -7,53 +7,13 @@
 	position:absolute;
 	z-index:1;
 	bottom:39%;
-	left:20%;
 	font-size: 1.875vw;
 	font-family: opensans regular;
-	color:white;
+	color:black;
 }
 
-#myCarousel .search-box .dropdown{
-	padding:0;
-	border:none;
-	width:100%;
-	background:none;
-	position:absolute;
-	width:14.0625vw;
-}
-
-#myCarousel .search-box .dropdown button{
-	padding:9px 0;
-	border:none;
-	background-color: rgba(255,255,255,0.34);
-	border-radius:15px;
-	width:100%;
-}
-#myCarousel .search-box input{
-	border: none;
-    padding: 9px 0;
-    padding-left: 17.65625vw;
-	padding-right:2.03125vw;
-    background-color: rgba(255,255,255,0.18);
-	border-radius:15px 0 0 15px;
-	cursor:text;
-	width:56.5625vw;
-	outline:none;
-}
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:white;
-}
-#myCarousel .search-box .input-group-btn{
-	background-color:rgba(255,255,255,0.18);
-	padding-right:26px;
-	border-radius:0px 15px 15px 0px;
-}
-#myCarousel .search-box .input-group-btn button{
-	background:none;
-	border:none;
-}
-#myCarousel .search-box .input-group-btn .fa{
-	font-size: 2.265625vw;
 }
 
 
@@ -64,26 +24,13 @@
 #myCarousel .carousel-inner .item{
 	overflow:hidden;
 }
-#myCarousel .carousel-inner .carousel-inner-overlay{
-	position:absolute;
-	z-index:1;
-	width:100%;
-	text-align:center;
-	top:22%;
-	line-height:1;
-}
-#myCarousel .carousel-inner .carousel-inner-overlay p{
-	color:white;
-	font-size:5.625vw;
-	font-family:pumpkin;
-	letter-spacing:0.15625vw;
-}
 #myCarousel .carousel-control{
 	background-image:none;
 	width:0px;
+	padding:43px;
 }
 #myCarousel .glyphicon{
-	margin:0px 43px;
+	margin:0;
 }
 #myCarousel .carousel-indicators{
 	bottom:0px;
@@ -99,8 +46,7 @@
 
 /* how it works */
 #how-it-works{
-	height:494px;
-	overflow:hidden;
+	min-height:494px;
 }
 .section-header{
 	margin-top: 67px;
@@ -129,7 +75,7 @@
 
 /*why us section*/
 #why-us{
-	height:545px;
+	min-height:545px;
 	overflow:hidden;
 	background-image:url(../images/whyus-background.jpg);
 	background-size:cover;
@@ -157,9 +103,13 @@
 	font-size:13px;
 }
 
+#why-us .section-content .col-xs-6{
+	min-height:300px;
+}
+
 /*by countries*/
 #browse-by-countries{
-	height:982px;
+	min-height:982px;
 	overflow:hidden;
 }
 #browse-by-countries .section-content{
@@ -201,7 +151,7 @@
 
 /*popular request*/
 #popular-requests{
-	height:918px;
+	min-height:918px;
 	background-color:#f8f8f8;
 	overflow:hidden;
 }
@@ -255,7 +205,7 @@
 
 /*reviews*/
 #reviews{
-	height:639px;
+	min-height:639px;
 	overflow:hidden;
 }
 #reviews-carousel .carousel-control{
@@ -285,7 +235,7 @@
 
 /*lets-stay-in-touch*/
 #stay-in-touch{
-	height:295px;
+	min-height:295px;
 	overflow:hidden;
 	background-image:url(../images/subscribe-background.jpg);
 }
@@ -325,4 +275,15 @@
 	height:212px;
 	background-color:black;
 	overflow:hidden;
+}
+@media screen and (max-width: 770px) {
+
+	#reviews-carousel .row div{
+		margin-bottom:20px;
+	}
+	#myCarousel .search-box{
+		bottom:0;
+		position:relative;
+	}
+
 }
