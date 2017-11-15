@@ -108,6 +108,9 @@
 	color:white;
 	margin:32px 0;
 }
+#wishlist img{
+	width:100%;
+}
 
 @media screen and (max-width: 770px) {
 	.user-details, .user-pic,.title,p{
