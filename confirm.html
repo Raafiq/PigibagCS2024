@@ -9,7 +9,7 @@
 
  	<!-- CSS documents-->
   	<link rel="stylesheet" type="text/css" href="css/template.css">
-  	<link rel="stylesheet" type="text/css" href="css/confirm.css">
+  	<link rel="stylesheet" type="text/css" href="css/status.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -50,10 +50,43 @@
     <p>Thank you for trusting Pigibag!</p>
     <p>Here are your order details:</p>
 
-    <p> put a picture, product name, quantity here </p>
-    <p> do not forget the edit and delete button</p>
+    <div class="row">
+    	<div class="col-md-1">
+        	<img src="images/status1.png" alt="kitkat">
+        </div>
+        <div class="col-md-3">
+            <p>Hojicha/Melon/Apple Kitkat</p>
+            <p>Request ID: 90141 <br>
+               Qty: 1</p>
+            <p>No request by traveller yet</p>
+        </div>
 
-    <p> share on facebook twitter google </p>
+        <div class="col-md-1 col-md-offset-1">
+            <div>
+               	<button class="btn">
+               		<i class="fa fa-pencil" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div>
+            	<button class="btn">
+                	<i class="fa fa-trash" aria-hidden="true"></i>
+            	</button>
+            </div>
+        </div>
+    </div>
+
+    <p>Share to your friends!</p>
+    <p>"I just posted a request in Pigibag!"</p>
+	<div class="container">
+		<div class="row">
+			<button class="btn">
+				<a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Share to Facebook</span></a>
+			</button>
+			<button class="btn">
+				<a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i><span>Share to Twitter</span></a>
+			</button>
+		</div>
+	</div>
     
   </div>
 
