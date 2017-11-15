@@ -1,0 +1,65 @@
+u1.breadcrumb {
+	padding-top:10px;
+}
+
+#countries-banner {
+	width:100%;
+}
+
+#header {
+	padding-top:12px;
+	font-size:24px;
+	font-family:opensans semibold;
+}
+
+.breadcrumb {
+	background-color:#ffffff !important;
+	padding-left:0px !important;
+}
+.section-header-underline{
+	height:4px;
+	width:90px;
+	background-color:#8dc0d3;
+}
+
+#search {
+	margin-top:25px;
+	
+}
+
+.btn {
+	background-color:#8dc0d3;
+	color:white;
+
+}
+
+.btn.btn-default.dropdown-toggle {
+	background-color:#8dc0d3;
+	color:white;
+}
+
+.listings{
+	width:83.33%;
+	margin:auto;
+	margin-top:15px;	
+	
+}
+
+.listings img{
+	max-width: 100%;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+#space-for-footer {
+	height:30px;
+	background-color:#ffffff;
+}
+
+@media screen and (max-width: 992px) {
+	
+	
+}
+@media screen and (max-width: 768px) {
+
+}
