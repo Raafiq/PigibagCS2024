@@ -22,13 +22,6 @@ img {
 	margin-bottom: 5px;
 }
 
-.breadcrumb {
-	background-color: inherit;
-	font-family: opensans semibold;
-	font-size: 16px;
-	margin-bottom: 0px;
-}
-
 .nav-tabs>li.active>a, .nav-tabs>li>a {
 	font-family: opensans semibold;
 	font-size: 14px;
@@ -53,6 +46,15 @@ h3 {
 	font-size: 24px;
 	font-family: opensans semibold;
 	color: #8dc0d3;
+}
+
+h4 {
+	font-size: 20px;
+	font-family: opensans regular;
+}
+
+#divider {
+	margin-top: 30px;
 }
 
 p,span {
