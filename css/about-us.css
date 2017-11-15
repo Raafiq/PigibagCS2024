@@ -1,83 +1,3 @@
-/* font imports */
-@font-face {
-    font-family: pumpkin;
-    src: url(../font/DK%20SPICED%20PUMPKIN.OTF);
-}
-@font-face {
-    font-family: opensans regular;
-    src: url(../font/OPENSANS-REGULAR.TTF);
-}
-@font-face {
-    font-family: opensans semibold;
-    src: url(../font/OPENSANS-SEMIBOLD.TTF);
-}
-@font-face {
-    font-family: opensans bold;
-    src: url(../font/OPENSANS-BOLD.TTF);
-}
-
-@media screen and (max-width: 770px) {
-
-	body{
-		padding-top:10.783309vw !important;
-	}
-	.navbar-header button{
-		margin-right:8.936170212765957vw;
-	}
-	#navbarCollapse{
-		background-color:white;
-	}
-	.navbar-header a>img{
-		height:6.046875vw !important;
-	}
-	#footer{
-		display:none;
-	}
-	.navbar-fixed-top .nav li>a{
-		font-size: 2.328125vw !important;
-	}
-}
-
-body{
-	background-color:white;
-	padding-top:5.783308931185944vw;
-  width: 100%;
-  overflow-x: hidden;
-}
-.container-fluid{
-	padding:0px;
-}
-/* nav bar */
-
-.navbar-header{
-	margin-left:6.328125vw;
-}
-.navbar-header a{
-	padding:0;
-}
-.navbar-header a>img{
-	height:3.046875vw;
-	margin-top:0.859375vw;
-}
-.navbar-fixed-top .nav{
-	margin-right:5.625vw;
-}
-.navbar-fixed-top .nav li>a{
-	font-size: 1.328125vw;
-	text-transform:uppercase;
-	font-family:opensans semibold;
-}
-.navbar-fixed-top li{
-	margin-top:4.5px;
-}
-.navbar-fixed-top{
-	background-color:#ffffff;
-	height:4.609375vw;
-}
-#myNavbar .row{
-	box-shadow: 0 0 0.78125vw 0 #BDB097;
-	padding: 0.78125vw 0;
-}
 h3{
 	font-family:opensans semibold;
 }
@@ -88,19 +8,19 @@ h3{
 	margin:0 auto;}
 
 #banner{
-  max-width:100%;
+  width:100%;
 }
 #about-us{
-  height:370px;
-  max-width: 100%;
+  min-height:200px;
   text-align: center;
+  padding-bottom:5%;
 }
 #about-us h1{
   font-family:opensans semibold;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 47px;
+  padding-top: 5%;
 }
 
 #about-us p{
@@ -109,10 +29,13 @@ h3{
   text-align: left;
 }
 
+#about-us .section-content{
+	margin-top:3%;
+}
 #meet-the-team{
-  height: auto;
-  max-width: 100%;
+  min-height:200px;
   background-color: #f8f8f8;
+  padding-bottom:5%;
 }
 
 #meet-the-team h1{
@@ -120,29 +43,32 @@ h3{
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 5vh;
+  padding-top: 5%;
 }
 
 #team-images{
-  width:100%;
-  top:5%;
-  padding-left: 11vw;
-  padding-right: 11vw;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  margin-top:3%;
+  margin-bottom:3%;
+}
+#team-images img{
+	width:100%;
 }
 
 #map{
-  position:relative;
-  width:100vw;
   padding:0;
+  overflow:hidden;
+  position:relative;
 }
 #map img{
-  max-width: 100%;
+  width: 100%;
 }
-#map h1,#map .section-header-underline{
-
-  position:absolute;
+#map .header{
+	position:absolute;
+	top:4%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 }
 
 #map h1{
@@ -150,18 +76,18 @@ h3{
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  top:4vh;
-  width:100vw;
+  top:4%;
+  width:100%;
 }
 
 #map .section-header-underline{
-  top:13vh;
-  left:44vw;
+  top:13%;
+  left:44%;
+  width:144px;
 }
 
 #awards{
-  max-width: 100%;
-  height:305px;
+  min-height:100px;
   background-color: #ffffff;
 }
 
@@ -170,18 +96,14 @@ h3{
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 47px;
 }
 #awards-logo{
-  max-width: 100%;
-  height:auto;
-  padding-top: 45px;
-  padding-bottom: 80px;
+  width: 100%;
+  margin-top: 10%;
 }
 
 #featured-in{
-  max-width: 100%;
-  height:295px;
+  min-height:100px;
   background-color: #f8f8f8;
 }
 
@@ -190,19 +112,17 @@ h3{
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 47px;
+  margin-top: 10%;
 }
 #featured-logo{
-  max-width: 100%;
-  height:auto;
-  padding-top: 45px;
-  padding-bottom: 80px;
+  width: 100%;
+  margin-top:10%;
 }
 
 #find-us{
-  max-width: 100%;
-  height:107px;
   background-color: #ffffff;
+  min-height:200px;
+  margin-bottom:5%;
 }
 
 #find-us h1{
@@ -210,16 +130,16 @@ h3{
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 47px;
+  margin-top: 10%;
 }
-#pigibag-map-container{
-  padding-top: 40px;
-  height:530px;
+#pigibag-map{
+	width:100%;
 }
-
 #find-us-text-container{
-  padding-top: 40px;
-  height:530px;
+  padding-top: 10px;
+}
+#find-us .row{
+	margin-top: 3%;
 }
 
 #find-us-text p{
@@ -236,4 +156,14 @@ h3{
 	left:0;
 	right:0;
 	color:white;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+	#find-us-text-container, #pigibag-map {
+	  margin-top: 5%;
+	}
+
 }

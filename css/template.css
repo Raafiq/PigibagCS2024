@@ -25,10 +25,6 @@ body{
 .container-fluid{
 	padding:0px;
 }
-
-#wrapper{	
-	min-height:738px;
-}
 /* nav bar */
 
 #myNavbar{

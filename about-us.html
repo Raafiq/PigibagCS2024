@@ -11,11 +11,12 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!--our css files-->
+	<link rel="stylesheet" type="text/css" href="css/template.css">
 	<link rel="stylesheet" type="text/css" href="css/about-us.css">
 </head>
 
 <body>
-	<div id="wrapper" class="container-fluid">
+	<div class="container-fluid">
 		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
 			<div class="container-fluid row">
 				<div class="navbar-header">
@@ -43,66 +44,88 @@
 
 	<div id="container" class="container-fluid">
   	<img id="banner" src="images/aboutus-banner.png">
-		<div class="container">
-  	<div id="about-us" class="col-md-8 col-md-offset-2" align="center">
-    	<h1>about us</h1>
-    	<div class="section-header-underline"></div>
-
-    	<p>Finding it hard to obtain your favourite products from foreign lands? Don’t want to wait FOREVER to unbox that special item you’ve been waiting for? You’ve come to the right place. </p>
-    	<p>Pigibag, a unique peer-to-peer personal shopping experience, was founded in October 2017 to connect shoppers and travelers together to benefit all. </p>
-    	<p>We pair shoppers with the ever growing and present network of travelers to make popular brands and unique items from all over the world easily accessible to the everyday consumer. </p>
-    	<p>No more pricy overseas shipping costs, no more waiting for your friend to visit in order to enjoy your beloved products.</p>
-
-  	</div>
-	</div>
-		<div id="meet-the-team" class="col-md-12">
-    	<h1>meet the team</h1>
-    	<div class="section-header-underline"></div>
-			<div id="team-images" class="col-md-12">
-			<img src="images/team1.png">
-			<img src="images/team2.png">
-			<img src="images/team3.png">
-			<img src="images/team4.png">
-			<img src="images/team5.png">
+	<div class="container">
+		<div id="about-us" class="col-md-8 col-md-offset-2" align="center">
+			<h1>about us</h1>
+			<div class="section-header-underline"></div>
+			<div class="section-content">
+				<p>Finding it hard to obtain your favourite products from foreign lands? Don’t want to wait FOREVER to unbox that special item you’ve been waiting for? You’ve come to the right place. </p>
+				<p>Pigibag, a unique peer-to-peer personal shopping experience, was founded in October 2017 to connect shoppers and travelers together to benefit all. </p>
+				<p>We pair shoppers with the ever growing and present network of travelers to make popular brands and unique items from all over the world easily accessible to the everyday consumer. </p>
+				<p>No more pricy overseas shipping costs, no more waiting for your friend to visit in order to enjoy your beloved products.</p>
 			</div>
-  	</div>
-
-		<div id="map" class="col-md-12">
-			<h1>popular travel locations</h1>
-	    <div class="section-header-underline"></div>
-			<img src="images/map.jpg">
 		</div>
+	</div>
+	<div id="meet-the-team">
+	<h1>meet the team</h1>
+	<div class="section-header-underline"></div>
+		<div id="team-images" class="row">
+			<div class="col-xs-4 col-xs-offset-2 col-md-2 col-md-offset-1">
+				<img src="images/team1.png">
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<img src="images/team2.png">
+			</div>
+			<div class="col-xs-4 col-xs-offset-2 col-md-2 col-md-offset-0">
+				<img src="images/team3.png">
+			</div>
+			<div class="col-xs-4 col-md-2">
+				<img src="images/team4.png">
+			</div>
+			<div class="col-xs-4 col-xs-offset-4 col-md-2 col-md-offset-0">
+				<img src="images/team5.png">
+			</div>
+		</div>
+	</div>
 
-  <div id="awards" class="col-md-12">
+	<div id="map">
+		<div class="header">
+			<h1>popular travel locations</h1>
+			<div class="section-header-underline"></div>
+		</div>
+		<img src="images/map.jpg">
+	</div>
+
+  <div id="awards">
     <h1>awards</h1>
     <div class="section-header-underline"></div>
-    <img id = "awards-logo" src="images/awards.png" alt="award-logos">
+    <div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<img id = "awards-logo" src="images/awards.png" alt="award-logos">
+		</div>
+	</div>
   </div>
-  <div id="featured-in" class="col-md-12">
+  <div id="featured-in">
     <h1>featured in</h1>
     <div class="section-header-underline"></div>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
 		<img id = "featured-logo" src="images/featuredin.png" alt="featured-logos">
+		</div>
+	</div>
   </div>
-  <div id="find-us" class="col-md-12">
-    <h1>find us at</h1>
-    <div class="section-header-underline"></div>
+	<div id="find-us">
+		<h1>find us at</h1>
+		<div class="section-header-underline"></div>
+		<div class="row">
+				<div id="pigibag-map-container" class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-1" align="center">
+					<img id = "pigibag-map" src="images/pigibag-map.png" alt="pigibag-map">
+				</div>
+				<div id="find-us-text-container" class="col-xs-10 col-xs-offset-1 col-sm-5 col-sm-offset-0" align="center">
+					<div class="container">
+					<div id="find-us-text">
+						<p id="choose">Choose to self-collect your requested items here!</p>
+						<p>(Or opt for free delivery)</p>
+						<p id="address1">Insert Address line 1 here</p>
+						<p id="address2">Insert Address line 2 here</p>
+						<p id="operating-hrs-1">Operating Hours:</p>
+						<p id="operating-hrs-2">Monday to Saturday: 9am - 7pm</p>
+					</div>
+					</div>
+				</div>
+			</div>
 	</div>
-	<div id="pigibag-map-container" class="col-md-6 left-column" align="center">
-		<img id = "pigibag-map" src="images/pigibag-map.png" alt="pigibag-map">
 	</div>
-	<div id="find-us-text-container" class="col-md-6 right-column" align="center">
-		<div class="container">
-		<div id="find-us-text">
-		<p id="choose">Choose to self-collect your requested items here!</p>
-		<p>(Or opt for free delivery)</p>
-		<p id="address1">Insert Address line 1 here</p>
-		<p id="address2">Insert Address line 2 here</p>
-		<p id="operating-hrs-1">Operating Hours:</p>
-		<p id="operating-hrs-2">Monday to Saturday: 9am - 7pm</p>
-		</div>
-		</div>
-	</div>
-</div>
 	<div id="footer">
 			Hello world
 	</div>
