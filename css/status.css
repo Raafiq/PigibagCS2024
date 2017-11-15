@@ -1,4 +1,4 @@
-.one, .two, .three{
+.one, .two, .three, .four, .five, .six{
     position:absolute;
 	margin-top:-10px;
 	z-index:1;
@@ -8,14 +8,24 @@
 }
 
 .one{
-	left:25%;
+	left:0%;
 }
 .two{
-	left:50%;
+	left:19.2%;
 }
 .three{
-	left:75%;
+	left:38.4%;
 }
+.four{
+	left:57.6%;
+}
+.five{
+	left:76.8%;
+}
+.six{
+	left:96%;
+}
+
 .primary-color{
 	background-color:#4989bd;
 }

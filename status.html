@@ -46,37 +46,99 @@
     </nav>
   </div>
 
+  <!--Breadcrumb-->
   <div class="container">
-  <h2>Status</h2>
+  <ol class="breadcrumb">
+    <li><a href="#">My Account</a></li>
+    <li class="active">Purchases</li>
+  </ol>
+  </div>
 
-    <div class="row"><br />
-      <div class="col-md-12">
-        <div class="progress">
-          <div class="one primary-color"></div><div class="two primary-color"></div><div class="three no-color"></div>
-          <div class="progress-bar" style="width: 70%;"></div>
+  <div class="container">
+    <h2>Status</h2>
+
+    <div class="container"><br />
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#open">Open</a></li>
+        <li><a data-toggle="tab" href="#offered">Offered</a></li>
+        <li><a data-toggle="tab" href="#pending-purchase">Pending Purchase</a></li>
+        <li><a data-toggle="tab" href="#pending-delivery">Pending Delivery</a></li>
+        <li><a data-toggle="tab" href="pending-acknowledgement">Pending Acknowledgement</a></li>
+        <li><a data-toggle="tab" href="#completed">Completed</a></li>
+      </ul>
+
+      <div class="section-content">
+        <div class="tab-content">
+          <div id="open" class="tab-pane active">
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/status1.png" alt="kitkat">
+              </div>
+              <div class="col-md-3">
+                <p>KitKat Tokyo Banana</p>
+                <p>Request ID: 12456</p>
+                Open
+                No request by traveller yet
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/status2.png" alt="choc">
+              </div>
+              <div class="col-md-3">
+                <p>KitKat Tokyo Banana</p>
+                <p>Request ID: 12456</p>
+                Open
+                No request by traveller yet
+              </div>
+            </div>
           </div>
-              <hr />
-          <div class="progress">
-              <div class="one success-color"></div><div class="two success-color"></div><div class="three success-color"></div>
-              <div class="progress-bar progress-bar-success" style="width: 100%"></div>
+
+          <div id="offered" class="tab-pane">
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/status3.png" alt="kitkat">
+              </div>
+              <div class="col-md-3">
+                <p>KitKat Tokyo Banana</p>
+                <p>Request ID: 12456</p>
+                Open
+                No request by traveller yet
+              </div>
+            </div>
           </div>
-              <hr />
-          <div class="progress">
-              <div class="one danger-color"></div><div class="two no-color"></div><div class="three no-color"></div>
-              <div class="progress-bar progress-bar-danger" style="width: 30%"></div>
+
+          <div id="pending-purchase" class="tab-pane">
+            <div class="row">
+              <div class="col-md-1">
+                <img src="images/status4.png" alt="kitkat">
+              </div>
+              <div class="col-md-3">
+                <p>KitKat Tokyo Banana</p>
+                <p>Request ID: 12456</p>
+                Open
+                No request by traveller yet
+              </div>
+            </div>
           </div>
-              <hr />
-          <div class="progress">
-              <div class="one warning-color"></div><div class="two warning-color"></div><div class="three no-color"></div>
-              <div class="progress-bar progress-bar-warning" style="width: 60%"></div>
+
+          <div id="pending-delivery" class="tab-pane">
           </div>
-              <hr />
-          <div class="progress">
-              <div class="one info-color"></div><div class="two no-color"></div><div class="three no-color"></div>
-              <div class="progress-bar progress-bar-info" style="width: 35%"></div>
+
+          <div id="pending-acknowledgement" class="tab-pane">
+
           </div>
+
+          <div id="completed" class="tab-pane">
+
+          </div>
+
+
         </div>
+      </div>
     </div>
+
   </div>
 
 	<!-- FOOTER -->
