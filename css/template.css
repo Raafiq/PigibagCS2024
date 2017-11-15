@@ -63,6 +63,7 @@ h3{
 	font-family:opensans semibold;
 }
 #footer{
+	height:auto;
 	background-color:#000000;
 	color:white;
 	padding-bottom: 30px;
