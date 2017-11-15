@@ -12,3 +12,77 @@ img {
 	background-color:#8dc0d3;
 	border: 1px solid white;
 }
+
+#pending-delivery, #completed {
+	margin-top: 20px;
+}
+
+#item-in-tab {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.breadcrumb {
+	background-color: inherit;
+	font-family: opensans semibold;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li>a {
+	font-family: opensans semibold;
+	font-size: 14px;
+	color: #8dc0d3;
+}
+
+.btn {
+	padding: 5px 20px 5px 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #ffffff;
+	color: #8dc0d3;
+	border: 1px solid #8dc0d3;
+}
+
+h2 {
+	font-size: 30px;
+	font-family: opensans semibold;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: opensans semibold;
+	color: #8dc0d3;
+}
+
+p,span {
+	font-family: opensans regular;
+	font-size: 12px;
+}
+
+a {
+	font-family: opensans semibold;
+	color: #8dc0d3;
+}
+
+a:hover {
+	color: #8dc0d3;
+}
+
+.fa.fa-frown-o {
+	color: #8dc0d3;
+	font-size: 100px;
+}
+
+@media screen and (max-width: 992px) {
+	#item-in-tab{
+		text-align:center !important;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+	#item-in-tab{
+		text-align:center !important;
+	}
+}
