@@ -35,13 +35,3 @@ h3{
 	background-color: #b9e1ed;
 	margin-bottom:5%;
 }
-
-#footer{
-	height:16.5625vw;
-	background-color:black;
-	overflow:hidden;
-	position:absolute;
-	left:0;
-	right:0;
-	color:white;
-}
