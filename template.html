@@ -32,15 +32,31 @@
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="nav navbar-nav" style="float:right">
 					<li class="active"><a href="index.html">Home</a></li>
-					<li><a href="main-browse.html">Browse</a></li>
+					<li class="dropdown ">
+						<a class="test dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">Browse <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="main-browse.html">All</a></li>
+							<li><a href="countries.html">Countries</a></li>
+							<li><a href="categories.html">Categories</a></li>
+						</ul>
+					</li>
 					<li><a href="post-request.html">Post Request</a></li>
 					<li><a href="post-trip.html">Post Trip</a></li>
-					<li><a href="user-profile.html">My Account</a></li>
+					<li class="dropdown ">
+						<a class="test dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">My Account<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="user-profile.html">Settings</a></li>
+							<li><a href="chat.html">Chat</a></li>
+							<li><a href="status.html">Request Status</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
+	<div id="content" style="min-height:500px;">
+	
+	</div>
 	<!--FOOTER-->
 	
 	<div id="footer">

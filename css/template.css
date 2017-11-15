@@ -51,11 +51,14 @@ body{
 	font-size: 16px;
 	text-transform:uppercase;
 	font-family:opensans semibold;
+	color:#8dc0d3 !important;
 }
 .navbar-fixed-top{
 	background-color:#ffffff;
 }
-
+.navbar-fixed-top .dropdown-menu li>a{
+	font-size: 14px;
+}
 h3{
 	font-family:opensans semibold;
 }
