@@ -27,3 +27,9 @@ p {
 	background-color:#8dc0d3;
 	margin:0 auto;
 }
+
+.btn.btn-default.dropdown-toggle, .btn.search, .btn.btn-default.dropdown-toggle:active, .btn.search:active{
+	background-color:#8dc0d3;
+	color:white;
+	border:#8dc0d3;
+}
