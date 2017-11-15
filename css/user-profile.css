@@ -17,7 +17,6 @@
 }
 #user-profile .about-us-btn{
 	outline:none;
-	margin:0;
 	background-color:white;
 	border:2px solid #8dc0d3;
 	color:#8dc0d3;
@@ -38,9 +37,13 @@
 #delivery-rate{
 	color:#bfc3ba;
 }
+#delivery-rate span{
+	margin-left:3%;
+}
 #about-me .about-me-header{
 	color:#243d5b;
-	font-size:16px;
+	font-size:20px;
+	font-weight:bold;
 }
 #about-me .about-me-detail{
 	margin:0;
@@ -50,7 +53,7 @@
 	color:#8dc0d3;
 }
 #about-me .activity-amount{
-	font-size:20px;
+	font-size:18px;
 	font-family: opensans semibold;
 	color:#243d5b;
 }
@@ -60,28 +63,34 @@
 #about-me .activity img{
 	float:left;
 	padding-right:22px;
+	max-height:75px;
+	height:100%;
+	min-width:108px;
 }
 #about-me .activity-name{
 	color:#8dc0d3;
+}
+#about-me .following{
+	margin-left:10%;
 }
 .float-left{
 	float:left;
 }
 #top-up-div{
-	margin-top:50px;
+	margin-top:18px;
 }
 #wallet-detail{
-	padding-top: 30px;
+	padding-top: 20px;
 	padding-left:38px;
 }
 .section-header{
-	margin-top: 67px;
+	margin-top: 2%;
 	text-align:center;
 }
 .section-header p{
 	font-size: 24px;
 	font-family: opensans bold;
-	margin-bottom:18px;
+	margin-bottom:0;
 	color:black; 
 }
 .section-header-underline{
@@ -108,9 +117,23 @@
 	color:white;
 	margin:32px 0;
 }
-
-@media screen and (max-width: 770px) {
+#wishlist img{
+	width:100%;
+}
+@media screen and (max-width: 992px) {
+	
+}
+@media screen and (max-width: 768px) {
 	.user-details, .user-pic,.title,p{
 		text-align:center !important;
+	}
+	#about-me{
+		padding: 0 5%;
+	}
+	.float-left{
+		float:none;
+	}
+	.about-us-btn{
+		margin-top:3%;
 	}
 }
