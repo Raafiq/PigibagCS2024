@@ -33,3 +33,19 @@ p {
 	color:white;
 	border:#8dc0d3;
 }
+
+.breadcrumb {
+	background-color: inherit;
+	font-family: opensans semibold;
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+#search-bar {
+	margin-bottom: 20px;
+}
+
+#request-description {
+	border: 1px solid grey;
+	padding: 10px 20px 20px 20px;
+}
