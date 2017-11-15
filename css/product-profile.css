@@ -20,3 +20,10 @@
 p {
 	margin: 0 0 0 0;
 }
+
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+	margin:0 auto;
+}
