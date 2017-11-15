@@ -34,11 +34,25 @@ p {
 	border:#8dc0d3;
 }
 
+.btn.btn-default.btn-block {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #ffffff;
+	font-family: opensans semibold;
+}
+
 .breadcrumb {
 	background-color: inherit;
 	font-family: opensans semibold;
 	font-size: 16px;
 	margin-bottom: 0px;
+}
+
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+	margin:0 auto;
 }
 
 #search-bar {
@@ -59,3 +73,23 @@ p {
 #traveller-detail {
 	border-right: 1px solid #d2d2d2;
 }
+
+h2 {
+	font-size: 24px;
+	font-family: opensans semibold;
+}
+
+i {
+	size: 30px;
+	color: #8dc0d3;
+}
+
+p {
+	font-size: 14px;
+	font-family: opensans regular;
+}
+
+#request-description p {
+	padding-top: 5px;
+}
+
