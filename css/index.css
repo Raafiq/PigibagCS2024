@@ -85,7 +85,7 @@
 #why-us{
 	min-height:200px;
 	overflow:hidden;
-	background-image:url(../images/whyus-background.jpg);
+	background-image:url(../images/whyus-background.png);
 	background-size:cover;
 }
 .section-header-detail{
@@ -169,22 +169,31 @@
 }
 #popular-requests ul{
 	margin-top:5%;
-	
+	padding-left:30px;
 }
 #popular-requests .section-content{
 	margin-top:5%;	
 }
 #popular-requests li>a{
 	color:#4b4b4b;
-	font-size:22px;
+	font-size:20px;
 	font-family:opensans regular;
+	padding-left:35px;
+	padding-right:35px;
 }
 #popular-requests img{
 	max-height:100%;
 	max-width:100%;
 	border-radius:5px;
 }
-
+#popular-requests .dropdown button{
+	background-color:#8dc0d3;
+	color:white;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	padding:7px 13px;
+}
 .nav-tabs{
 	border-bottom:1px solid #a8a8a8;
 }
@@ -251,7 +260,7 @@
 #stay-in-touch{
 	min-height:100px;
 	overflow:hidden;
-	background-image:url(../images/subscribe-background.jpg);
+	background-image:url(../images/subscribe-background.png);
 }
 #stay-in-touch .section-header-detail{
 	font-family:opensans regular;
@@ -285,6 +294,12 @@
 #stay-in-touch ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:black;
 }
+#popular-requests .dropdown ul{
+	width:70%;
+	margin-left:15%;
+	margin-top:0;
+	padding:0;
+}
 #footer{
 	height:212px;
 	background-color:black;
@@ -313,5 +328,17 @@
 	#stay-in-touch input{
 		padding:9px 15px;
 		width:75%;
+	}
+	#popular-requests .nav{
+		display:none !important;
+	}
+	#popular-requests .dropdown{
+		display:block !important;
+	}
+	#popular-requests .dropdown button{
+		    width: 70%;
+			margin: auto;
+			display: block;
+			margin-top: 5%;
 	}
 }

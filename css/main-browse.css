@@ -62,6 +62,9 @@ ul{
 #categories li:hover, #countries li:hover{
 	background-color:#e8e8e8;
 }
+#categories .active, #countries .active{
+	background-color:#e8e8e8;
+}
 #countries-btn{
 	border-bottom:1px solid #f8f8f8;
 }
