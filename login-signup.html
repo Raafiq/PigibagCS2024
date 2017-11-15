@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Login / Sign Up</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--our css files-->
+	<link rel="stylesheet" type="text/css" href="css/login-signup.css">
+</head>
+
+<body>
+	<div id="wrapper" class="container-fluid">
+		<nav id="myNavbar" class="navbar navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="navbar-header col-md-4 col-sm-4 col-xs-12">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+							<span class="sr-only">Toggle Navigation</span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+							<span class="icon-bar" style="background-color:black"></span>
+						</button>
+						<a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+					</div>
+
+					<div class="collapse navbar-collapse " id="navbarCollapse">
+						<ul class="nav navbar-nav" style="float:right">
+							<li class="active"><a href="#" target="_blank">Home</a></li>
+							<li><a href="#">Browse</a></li>
+							<li><a href="#">Post Request</a></li>
+							<li><a href="#">Post Trip</a></li>
+							<li><a href="#">My Account</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+
+  <div class="top-content">
+
+      <div class="inner-bg">
+          <div class="container">
+
+              <div class="row">
+                  <div class="col-sm-8 col-sm-offset-2 text">
+                      <h2 id="title">Login Here! Not a member? Sign up Now!</h2>
+                      <div class="section-header-underline"></div>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="col-sm-5">
+
+                    <div class="form-box">
+                      <div class="form-top">
+                        <div class="form-top-left">
+                          <h3>Login to our site</h3>
+                            <p>Enter username and password to log on:</p>
+                        </div>
+                        <div class="form-top-right">
+                          <i class="fa fa-key"></i>
+                        </div>
+                        </div>
+                        <div class="form-bottom">
+                      <form role="form" action="" method="post" class="login-form">
+                        <div class="form-group">
+                          <label class="sr-only" for="form-username">Username</label>
+                            <input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-password">Password</label>
+                            <input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+                          </div>
+                          <button type="submit" class="btn">Sign in!</button>
+                      </form>
+                    </div>
+                  </div>
+
+                <div class="social-login">
+                      <h3>...or login with:</h3>
+                      <div class="social-login-buttons">
+                        <a class="btn btn-link-1 btn-link-1-facebook" href="#">
+                          <i class="fa fa-facebook"></i> Facebook
+                        </a>
+                        <a class="btn btn-link-1 btn-link-1-twitter" href="#">
+                          <i class="fa fa-twitter"></i> Twitter
+                        </a>
+                        <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
+                          <i class="fa fa-google-plus"></i> Google Plus
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-sm-1 middle-border"></div>
+                  <div class="col-sm-1"></div>
+
+                  <div class="col-sm-5">
+
+                    <div class="form-box">
+                      <div class="form-top">
+                        <div class="form-top-left">
+                          <h3>Sign up now</h3>
+                            <p>Fill in the form below to get instant access:</p>
+                        </div>
+                        <div class="form-top-right">
+                          <i class="fa fa-pencil"></i>
+                        </div>
+                        </div>
+                        <div class="form-bottom">
+                      <form role="form" action="" method="post" class="registration-form">
+                        <div class="form-group">
+                          <label class="sr-only" for="form-first-name">First name</label>
+                            <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-last-name">Last name</label>
+                            <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-email">Email</label>
+                            <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                          </div>
+                          <div class="form-group">
+                            <label class="sr-only" for="form-about-yourself">About yourself</label>
+                            <textarea name="form-about-yourself" placeholder="About yourself..."
+                                  class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                          </div>
+                          <button type="submit" class="btn">Sign me up!</button>
+                      </form>
+                    </div>
+                    </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </div>
+
+  </div>
+
+
+  <div id="footer">
+			Hello world
+	</div>
+</body>
+</html>
+
+</html>

@@ -1,0 +1,239 @@
+/* font imports */
+@font-face {
+    font-family: pumpkin;
+    src: url(../font/DK%20SPICED%20PUMPKIN.OTF);
+}
+@font-face {
+    font-family: opensans regular;
+    src: url(../font/OPENSANS-REGULAR.TTF);
+}
+@font-face {
+    font-family: opensans semibold;
+    src: url(../font/OPENSANS-SEMIBOLD.TTF);
+}
+@font-face {
+    font-family: opensans bold;
+    src: url(../font/OPENSANS-BOLD.TTF);
+}
+
+@media screen and (max-width: 770px) {
+
+	body{
+		padding-top:10.783309vw !important;
+	}
+	.navbar-header button{
+		margin-right:8.936170212765957vw;
+	}
+	#navbarCollapse{
+		background-color:white;
+	}
+	.navbar-header a>img{
+		height:6.046875vw !important;
+	}
+	#footer{
+		display:none;
+	}
+	.navbar-fixed-top .nav li>a{
+		font-size: 2.328125vw !important;
+	}
+}
+
+body{
+	background-color:white;
+	padding-top:5.783308931185944vw;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container-fluid{
+	padding:0px;
+}
+/* nav bar */
+
+.navbar-header{
+	margin-left:6.328125vw;
+}
+.navbar-header a{
+	padding:0;
+}
+.navbar-header a>img{
+	height:3.046875vw;
+	margin-top:0.859375vw;
+}
+.navbar-fixed-top .nav{
+	margin-right:5.625vw;
+}
+.navbar-fixed-top .nav li>a{
+	font-size: 1.328125vw;
+	text-transform:uppercase;
+	font-family:opensans semibold;
+}
+.navbar-fixed-top li{
+	margin-top:4.5px;
+}
+.navbar-fixed-top{
+	background-color:#ffffff;
+	height:4.609375vw;
+}
+#myNavbar .row{
+	box-shadow: 0 0 0.78125vw 0 #BDB097;
+	padding: 0.78125vw 0;
+}
+h3{
+	font-family:opensans semibold;
+}
+.section-header-underline{
+	height:4px;
+	width:80px;
+	background-color:#8dc0d3;
+	margin:0 auto;}
+
+#banner{
+  max-width:100%;
+}
+#about-us{
+  height:370px;
+  max-width: 100%;
+  text-align: center;
+}
+#about-us h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
+
+#about-us p{
+  font-family:opensans regular;
+  font-size: 13px;
+  text-align: left;
+}
+
+#meet-the-team{
+  height: auto;
+  max-width: 100%;
+  background-color: #f8f8f8;
+}
+
+#meet-the-team h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 5vh;
+}
+
+#team-images{
+  width:100%;
+  top:5%;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#map{
+  position:relative;
+  width:100vw;
+  padding:0;
+}
+#map img{
+  max-width: 100%;
+}
+#map h1,#map .section-header-underline{
+
+  position:absolute;
+}
+
+#map h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  top:4vh;
+  width:100vw;
+}
+
+#map .section-header-underline{
+  top:13vh;
+  left:44vw;
+}
+
+#awards{
+  max-width: 100%;
+  height:305px;
+  background-color: #ffffff;
+}
+
+#awards h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
+#awards-logo{
+  max-width: 100%;
+  height:auto;
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+
+#featured-in{
+  max-width: 100%;
+  height:295px;
+  background-color: #f8f8f8;
+}
+
+#featured-in h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
+#featured-logo{
+  max-width: 100%;
+  height:auto;
+  padding-top: 45px;
+  padding-bottom: 80px;
+}
+
+#find-us{
+  max-width: 100%;
+  height:107px;
+  background-color: #ffffff;
+}
+
+#find-us h1{
+  font-family:opensans semibold;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 47px;
+}
+#pigibag-map-container{
+  padding-top: 40px;
+  height:530px;
+}
+
+#find-us-text-container{
+  padding-top: 40px;
+  height:530px;
+}
+
+#find-us-text p{
+  font-family: opensans semibold;
+  font-size:14px;
+  text-align: left;
+}
+
+#footer{
+	height:16.5625vw;
+	background-color:black;
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	right:0;
+	color:white;
+}
