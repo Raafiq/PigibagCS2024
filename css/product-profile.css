@@ -34,6 +34,13 @@ p {
 	border:#8dc0d3;
 }
 
+.btn.btn-default.btn-block {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #ffffff;
+	font-family: opensans semibold;
+}
+
 .breadcrumb {
 	background-color: inherit;
 	font-family: opensans semibold;
@@ -41,11 +48,73 @@ p {
 	margin-bottom: 0px;
 }
 
+.section-header-underline{
+	height:6px;
+	width:118px;
+	background-color:#8dc0d3;
+	margin:0 auto;
+}
+
 #search-bar {
 	margin-bottom: 20px;
 }
 
-#request-description {
-	border: 1px solid grey;
-	padding: 10px 20px 20px 20px;
+#request-description, #traveller-profile{
+	border: 1px solid #d2d2d2;
+	padding: 10px 20px 10px 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#first-row {
+	border-bottom: 1px solid #d2d2d2;
+}
+
+#traveller-detail {
+	border-right: 1px solid #d2d2d2;
+}
+
+#review {
+	color: #8dc0d3;
+	font-size: 12px;
+	vertical-align: center;
+}
+
+h2 {
+	font-size: 24px;
+	font-family: opensans semibold;
+}
+
+h3 {
+	font-size: 24px;
+	font-family: opensans bold;
+	margin-bottom: 0px;
+	color: #000000;
+}
+
+i {
+	size: 30px;
+	color: #8dc0d3;
+}
+
+p {
+	font-size: 14px;
+	font-family: opensans regular;
+}
+
+#request-description p {
+	padding-top: 5px;
+}
+
+#traveller-profile p, #requester-profile p {
+	font-family: opensans semibold;
+}
+
+#second-row{
+	padding-top: 10px;
+}
+
+#viewed {
+	margin-top: 40px;
+	margin-bottom: 50px;
 }
