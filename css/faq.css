@@ -7,20 +7,37 @@
 	width:100%;
 }
 
+
+.section-header-underline{
+	height:4px;
+	width:80px;
+	background-color:#8dc0d3;
+	margin:0 auto;}
+
 button,button:focus {
 	outline:none;
 }
 
-#feedback{
-	padding-top:25px;
+#banner{
+  max-width:100%;
 }
 
-#feedback-header {
+#feedback{
+	padding-top:25px;
+	background-image: url("../images/contactus-background.png");
+	font-family:opensans semibold;
+	padding-bottom: 40px;
+
+}
+
+#feedback h3 {
 	font-size:32px;
 }
+
 #faq{
-	margin-top:15px;
+	margin-top:25px;
 }
+
 .form-group .faq-text{
 	margin:10px;
 	font-family:opensans regular;
@@ -43,6 +60,10 @@ button,button:focus {
 	color:white;
 	font-size:16px;
 	padding:2%;
+}
+
+#contact-us {
+	padding-top: 30px;
 }
 
 @media screen and (max-width: 992px) {
