@@ -1,8 +1,13 @@
 .content{
 	min-height:500px;
 }
+
 img {
 	border-radius: 50%;
+}
+
+#myNavbar img {
+	border-radius: 0%;
 }
 
 .section-header-underline{
