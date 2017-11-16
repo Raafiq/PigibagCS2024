@@ -7,12 +7,12 @@
 }
 
 .container {
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .section-header-underline{
-	height:6px;
-	width:118px;
+	height:4px;
+	width:80px;
 	background-color:#8dc0d3;
 }
 
@@ -20,11 +20,13 @@
 	background-color: #8dc0d3;
 	color: #ffffff;
 	border-color: #8dc0d3;
+	font-size:18px;
+	font-family:opensans bold;
 }
 
 .btn.btn-success:active {
 	background-color: #808F87;
-	color: #ffffff
+	color: #ffffff;
 	border-color: #808F87;
 }
 
@@ -48,6 +50,9 @@
 	margin-top: 20px;
 }
 
+#map{
+	width:100%;
+}
 #footer {
 	margin-top: 0px;
 }

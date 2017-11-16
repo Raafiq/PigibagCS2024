@@ -2,8 +2,8 @@ h3{
 	font-family:opensans semibold;
 }
 .section-header-underline{
-	height:6px;
-	width:118px;
+	height:4px;
+	width:80px;
 	background-color:#8dc0d3;
 	margin:0 auto;
 }
@@ -34,4 +34,5 @@ h3{
 #why-use-us img{
 	background-color: #b9e1ed;
 	margin-bottom:5%;
+	width:100%;
 }

@@ -26,12 +26,14 @@ button,button:focus {
 	padding-top:25px;
 	background-image: url("../images/contactus-background.png");
 	font-family:opensans semibold;
-	padding-bottom: 40px;
-
+	padding-bottom: 25px;
+	background-size:cover;
 }
-
+#feedback label{
+	font-size:18px;
+}
 #feedback h3 {
-	font-size:32px;
+	font-size:24px;
 }
 
 #faq{
@@ -45,21 +47,25 @@ button,button:focus {
 }
 .form-group button{
 	font-family:opensans semibold;	
-	font-size:17px;
+	font-size:18px;
 	padding:2%;
-}
-#space-for-footer {
-	height:20px;
-	background-color:#ffffff;
 }
 #submit-btn{
-	border:none;
-	background-color: #8dc0d3;
-	border-radius:5px;
-	font-family:opensans bold;
-	color:white;
-	font-size:16px;
-	padding:2%;
+	border: none;
+    background-color: #8dc0d3;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    height: 42px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: opensans bold;
+    color: white;
+	margin-top:10px;
+}
+.submit-btn-container{
+	text-align:center;
 }
 
 #contact-us {

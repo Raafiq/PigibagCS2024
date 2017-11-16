@@ -1,10 +1,13 @@
+.content{
+	min-height:500px;
+}
 img {
 	border-radius: 50%;
 }
 
 .section-header-underline{
-	height:6px;
-	width:118px;
+	height:4px;
+	width:80px;
 	background-color:#8dc0d3;
 }
 
@@ -18,8 +21,11 @@ img {
 }
 
 #item-in-tab {
-	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.product-name{
+	font-size:18px;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li>a {
@@ -75,7 +81,9 @@ a:hover {
 	color: #8dc0d3;
 	font-size: 100px;
 }
-
+#footer{
+	margin-top:30px;
+}
 @media screen and (max-width: 992px) {
 	#item-in-tab{
 		text-align:center !important;

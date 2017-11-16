@@ -24,11 +24,16 @@
 	border-radius:5px;
 	width:122px;
 	height:44px;
+	font-size:18px;
+	font-family:opensans bold;
 }
 #user-profile .user-details p{
 	margin:0;
 }
 #joined-date{
+	color:#8dc0d3;
+}
+#traveller-tag{
 	color:#8dc0d3;
 }
 .checked{
@@ -69,6 +74,7 @@
 }
 #about-me .activity-name{
 	color:#8dc0d3;
+font-size:16px;
 }
 #about-me .following{
 	margin-left:10%;
@@ -109,13 +115,13 @@
 	outline:none;
 	margin:0;
 	padding:0;
-	width:266px;
-	height:51px;
+	width:175px;
+	height:42px;
 	border-radius: 25px;
-	font-size:24px;
+	font-size:18px;
 	font-family:opensans bold;
 	color:white;
-	margin:32px 0;
+	margin:30px 0;
 }
 #wishlist img{
 	width:100%;

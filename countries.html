@@ -5,13 +5,16 @@
 <title>countries</title>
 <link rel="stylesheet" href="css/countries.css">
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/template.css">
+
 </head>
 
 <body>
@@ -44,17 +47,19 @@
 					<li class="dropdown ">
 						<a class="test dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">My Account<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="user-profile.html">Settings</a></li>
+							<li><a href="user-profile.html">Profile</a></li>
 							<li><a href="chat.html">Chat</a></li>
 							<li><a href="status.html">Request Status</a></li>
+							<li><a href="login-signup.html">Logout</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="container-fluid">
-		<img src="images/countries-banner.jpg" id="countries-banner">
+	<div class="content">
+		<img src="images/countries-banner.png" id="countries-banner">
+		<img src="images/countries-mobile.png" id="mobile-countries-banner" style="display:none">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-1 col-xs-offset-1" style="background-color:#ffffff;">
 				<div id="breadcrumb_top">
@@ -70,20 +75,31 @@
 		</div>
 		<div class="row" id="search">
 			<form method="get" id="searchForm" action="search">
-				<div class="form-group col-md-6 col-md-push-5 col-sm-12 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 margin-top-20">
+				<div class="form-group col-md-6 col-md-push-5 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 margin-top-20">
 					<div class=input-group>
 						<div class="input-group-btn">
-				        	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Request<span class="caret"></span></button>
+				        	<button type="button" class="btn-hover-effect btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Request<span class="caret"></span></button>
 				        	<ul class="dropdown-menu">
 				          		<li><a href="#">All</a></li>
-				          		<li><a href="#">country</a></li>
-				          		<li><a href="#">Country</a></li>
-				          		<li><a href="#">Recommendation</a></li>
+								<li><a href="#">Japan</a></li>
+								<li><a href="#">Korea</a></li>
+								<li><a href="#">China</a></li>
+								<li><a href="#">India</a></li>
+								<li><a href="#">Indonesia</a></li>
+								<li><a href="#">US</a></li>
+								<li><a href="#">Canada</a></li>
+								<li><a href="#">Brazil</a></li>
+								<li><a href="#">UK</a></li>
+								<li><a href="#">Spain</a></li>
+								<li><a href="#">France</a></li>
+								<li><a href="#">Italy</a></li>
+								<li><a href="#">Greece</a></li>
+								<li><a href="#">Australia</a></li>
 				        	</ul>
 				        </div>
 						<input type="text" class="form-control" placeholder="Search...">
 						<div class="input-group-btn">
-							<button type="button" class="btn">Search</button>
+							<button type="button" class="btn btn-hover-effect">Search</button>
 						</div>
 					</div>
 				</div>
@@ -91,81 +107,77 @@
 		</div>
 		
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-1.png" id="country-1">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-2.png" id="country-2">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-3.png" id="country-3">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-4.png" id="country-4">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-5.png" id="country-5">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-6.png" id="country-6">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-7.png" id="country-7">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-8.png" id="country-8">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-9.png" id="country-9">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-10.png" id="country-10">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-11.png" id="country-11">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-12.png" id="country-12">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-13.png" id="country-13">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-14.png" id="country-14">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-15.png" id="country-15">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-16.png" id="country-16">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-17.png" id="country-17">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-18.png" id="country-18">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-19.png" id="country-19">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/country-20.png" id="country-20">
 			</div>
 		</div>
-		<div class="row" id="space-for-footer">
-		</div>
-	</div>
 	</div>
 </div>
-
 <!--FOOTER-->
 	
 	<div id="footer">
@@ -217,7 +229,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	
+
+</div>
 </body>
 </html>

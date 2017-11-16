@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/template.css">
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,9 +46,10 @@
 					<li class="dropdown ">
 						<a class="test dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">My Account<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="user-profile.html">Settings</a></li>
+							<li><a href="user-profile.html">Profile</a></li>
 							<li><a href="chat.html">Chat</a></li>
 							<li><a href="status.html">Request Status</a></li>
+							<li><a href="login-signup.html">Logout</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -60,32 +63,18 @@
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		 </ol>
+		 
+		<div class="item search-mobile-bg">
+			  <img src="images/homepage-mobile.png">
+		</div>
 		 <div class="search-box row">
 				<form method="get" id="searchForm" action="search">
-				<div class="form-group col-sm-6 col-sm-push-3 col-xs-10 col-xs-push-1 margin-top-20">
+				<div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 col-xs-10 col-xs-push-1">
 					<div class="input-group">
+						
+						<input type="text" class="form-control" placeholder="Find your favourite items!">
 						<div class="input-group-btn">
-				        	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Country<span class="caret"></span></button>
-				        	<ul class="dropdown-menu">
-									<li><a href="#">Japan</a></li>
-									<li><a href="#">Korea</a></li>
-									<li><a href="#">China</a></li>
-									<li><a href="#">India</a></li>
-									<li><a href="#">Indonesia</a></li>
-									<li><a href="#">US</a></li>
-									<li><a href="#">Canada</a></li>
-									<li><a href="#">Brazil</a></li>
-									<li><a href="#">UK</a></li>
-									<li><a href="#">Spain</a></li>
-									<li><a href="#">France</a></li>
-									<li><a href="#">Italy</a></li>
-									<li><a href="#">Greece</a></li>
-									<li><a href="#">Australia</a></li>
-							</ul>>
-				        </div>
-						<input type="text" class="form-control" placeholder="Search...">
-						<div class="input-group-btn">
-							<button type="button" class="btn">Search</button>
+							<button type="button" class="btn btn-hover-effect">Search</button>
 						</div>
 					</div>
 				</div>
@@ -95,7 +84,7 @@
 		 <div class="carousel-inner hidden-xs">
 
 			<div class="item active">
-			  <img src="images/background.png">
+			  <img src="images/homepage-background.png">
 			</div>
 
 			<div class="item">
@@ -117,7 +106,7 @@
 			<span class="sr-only">Next</span>
 		</a>
 		</div>
-		<div id="how-it-works">
+		<div id="how-it-works" class="section-div">
 			<div class="section-header">
 				<p>How pigibag works</p>
 				<div class="section-header-underline">
@@ -133,10 +122,10 @@
 			</div>
 										
 			<div class="show-more">
-				<button>Learn More</button>
+				<a href="faq.html"><button class="btn-hover-effect">Learn More</button></a>
 			</div>
 		</div>
-		<div id="why-us">
+		<div id="why-us" class="section-div">
 			<div class="section-header">
 				<p>Why use pigibag</p>
 				<div class="section-header-underline">
@@ -154,7 +143,7 @@
 				</div>
 				<div class="col-sm-3 col-sm-offset-0 col-md-2 col-xs-6">
 					<img src="images/whyus-2.png">
-					<h3>Secure Payment</h3>
+					<h3>Secure Payment Method</h3>
 					<p>We hold your payment until you inform us that you’ve received your goods. </p> <p>Don’t worry about anyone going MIA with your hard-earned money!</p>
 				</div>
 				<div class="col-sm-3 col-sm-offset-0 col-md-2 col-xs-6">
@@ -169,7 +158,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="browse-by-countries">
+		<div id="browse-by-countries" class="section-div">
 			<div class="section-header">
 				<p>Browse requests by countries</p>
 				<div class="section-header-underline">
@@ -178,211 +167,221 @@
 			<div class="section-content">
 				<div class="row col-md-10 col-md-push-1 col-xs-10 col-xs-push-1">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-1.png">
+							<img class="img-hover-effect" src="images/country-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-2.png">
+							<img class="img-hover-effect" src="images/country-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-3.png">
+							<img class="img-hover-effect" src="images/country-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-4.png">
+							<img class="img-hover-effect" src="images/country-4.png">
 						</div>
 				</div>
 				<div class="row col-md-10 col-md-push-1 col-xs-10 col-xs-push-1">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-5.png">
+							<img class="img-hover-effect" src="images/country-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-6.png">
+							<img class="img-hover-effect" src="images/country-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-7.png">
+							<img class="img-hover-effect" src="images/country-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/country-8.png">
+							<img class="img-hover-effect" src="images/country-8.png">
 						</div>
 				</div>
-				<div class="show-more">
-					<button>Show All</button>
+				<div class="col-xs-12 show-more" style="margin-top:20px">
+					<a href="countries.html"><button class="btn-hover-effect">Show All</button></a>
 				</div>
 			</div>
 		</div>
-		<div id="popular-requests">
+		<div id="popular-requests" class="section-div">
 			<div class="section-header">
 				<p>Popular requests</p>
 				<div class="section-header-underline">
 				</div>
 			</div>
-			<ul class="nav nav-tabs col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+			<ul class="nav nav-tabs col-sm-10 col-sm-offset-1">
 				<li class="active"><a data-toggle="tab" href="#home">All</a></li>
 				<li><a data-toggle="tab" href="#menu1">Food &amp; Drinks</a></li>
 				<li><a data-toggle="tab" href="#menu2">Beauty Products</a></li>
 				<li><a data-toggle="tab" href="#menu3">Fashion &amp; Accessories</a></li>
 				<li><a data-toggle="tab" href="#menu4">Tech</a></li>
 			 </ul>
-			<div class="section-content col-xs-10 col-xs-offset-1">
-			  
+			 <div class="dropdown" style="display:none">
+				<button class="dropdown-toggle btn-hover-effect" type="button" data-toggle="dropdown">Select
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li class="active"><a data-toggle="tab" href="#home">All</a></li>
+					<li><a data-toggle="tab" href="#menu1">Food &amp; Drinks</a></li>
+					<li><a data-toggle="tab" href="#menu2">Beauty Products</a></li>
+					<li><a data-toggle="tab" href="#menu3">Fashion &amp; Accessories</a></li>
+					<li><a data-toggle="tab" href="#menu4">Tech</a></li>
+				</ul>
+			 </div>
+			<div class="section-content col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1"> 
 
 			  <div class="tab-content">
 				<div id="home" class="tab-pane fade in active">
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-1.png">
+							<img class="img-hover-effect" src="images/listing-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-2.png">
+							<img class="img-hover-effect" src="images/listing-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-3.png">
+							<img class="img-hover-effect" src="images/listing-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-4.png">
+							<img class="img-hover-effect" src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-5.png">
+							<img class="img-hover-effect" src="images/listing-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-6.png">
+							<img class="img-hover-effect" src="images/listing-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-7.png">
+							<img class="img-hover-effect" src="images/listing-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-8.png">
+							<img class="img-hover-effect" src="images/listing-8.png">
 						</div>
 					</div>
 				</div>
 				<div id="menu1" class="tab-pane fade">
 				<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-1.png">
+							<img class="img-hover-effect" src="images/listing-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-2.png">
+							<img class="img-hover-effect" src="images/listing-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-3.png">
+							<img class="img-hover-effect" src="images/listing-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-4.png">
+							<img class="img-hover-effect" src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-5.png">
+							<img class="img-hover-effect" src="images/listing-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-6.png">
+							<img class="img-hover-effect" src="images/listing-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-7.png">
+							<img class="img-hover-effect" src="images/listing-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-8.png">
+							<img class="img-hover-effect" src="images/listing-8.png">
 						</div>
 					</div>
 				</div>
 				<div id="menu2" class="tab-pane fade">
 				<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-1.png">
+							<img class="img-hover-effect" src="images/listing-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-2.png">
+							<img class="img-hover-effect" src="images/listing-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-3.png">
+							<img class="img-hover-effect" src="images/listing-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-4.png">
+							<img class="img-hover-effect" src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-5.png">
+							<img class="img-hover-effect" src="images/listing-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-6.png">
+							<img class="img-hover-effect" src="images/listing-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-7.png">
+							<img class="img-hover-effect" src="images/listing-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-8.png">
+							<img class="img-hover-effect" src="images/listing-8.png">
 						</div>
 					</div>
 				</div>
 				<div id="menu3" class="tab-pane fade">
 				<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-1.png">
+							<img class="img-hover-effect" src="images/listing-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-2.png">
+							<img class="img-hover-effect" src="images/listing-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-3.png">
+							<img class="img-hover-effect" src="images/listing-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-4.png">
+							<img class="img-hover-effect" src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-5.png">
+							<img class="img-hover-effect" src="images/listing-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-6.png">
+							<img class="img-hover-effect" src="images/listing-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-7.png">
+							<img class="img-hover-effect" src="images/listing-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-8.png">
+							<img class="img-hover-effect" src="images/listing-8.png">
 						</div>
 					</div>
 				</div>
 				<div id="menu4" class="tab-pane fade">
 				<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-1.png">
+							<img class="img-hover-effect" src="images/listing-1.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-2.png">
+							<img class="img-hover-effect" src="images/listing-2.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-3.png">
+							<img class="img-hover-effect" src="images/listing-3.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-4.png">
+							<img class="img-hover-effect" src="images/listing-4.png">
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-5.png">
+							<img class="img-hover-effect" src="images/listing-5.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-6.png">
+							<img class="img-hover-effect" src="images/listing-6.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-7.png">
+							<img class="img-hover-effect" src="images/listing-7.png">
 						</div>
 						<div class="col-sm-3 col-xs-6">
-							<img src="images/listing-8.png">
+							<img class="img-hover-effect" src="images/listing-8.png">
 						</div>
 					</div>
 				</div>
 			  </div>
 			  <div class="show-more">
-				<button>Browse All</button>
+				<a href="categories.html"><button class="btn-hover-effect">Browse All</button></a>
 			  </div>
 			</div>
 		</div>
-		<div id="reviews">
+		<div id="reviews" class="section-div">
 			<div class="section-header">
 				<p>Recent Reviews</p>
 				<div class="section-header-underline">
@@ -445,7 +444,7 @@
 				 </a>
 			</div>
 		</div>
-		<div id="stay-in-touch">
+		<div id="stay-in-touch" class="section-div">
 			<div class="section-header">
 				<p>Let's stay in touch</p>
 				<div class="section-header-underline">
@@ -453,9 +452,19 @@
 			</div>
 			<p class="section-header-detail">Subscribe to our newsletter to discover the
 			newest hype, recommendations and promotions.</p>
-			<div class="section-content input-group col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1">
-				<input type="email" name="email" placeholder="Enter your email address here">
-				 <button class="input-group-addon">Subscribe</button>
+			
+			<div class="search-box row">
+				<form method="get" id="searchForm" action="search">
+				<div class="form-group col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 col-xs-10 col-xs-push-1">
+					<div class="input-group">
+						
+						<input type="text" class="form-control" placeholder="Enter your email for updates!">
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-hover-effect">Subscribe</button>
+						</div>
+					</div>
+				</div>
+				</form>
 			</div>
 		</div>
 		<!--FOOTER-->
