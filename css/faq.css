@@ -51,15 +51,18 @@ button,button:focus {
 	padding:2%;
 }
 #submit-btn{
-	border:none;
-	background-color: #8dc0d3;
-	border-radius:5px;
-	font-family:opensans bold;
-	color:white;
-	font-size:16px;
-	padding:2%;
+	border: none;
+    background-color: #8dc0d3;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    height: 42px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: opensans bold;
+    color: white;
 	margin-top:10px;
-	margin-bottom:15px;
 }
 .submit-btn-container{
 	text-align:center;

@@ -21,6 +21,7 @@ body{
 	padding-top:60px;
 	overflow-x:hidden;
 	font-family:opensans regular;
+	cursor:default;
 }
 .container-fluid{
 	padding:0px;

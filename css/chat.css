@@ -1,6 +1,7 @@
 .main-section{
 	margin-top:4%;
 	font-family:opensans regular;
+	padding-bottom:4%;
 }
 #pane-list{
 	background-color:#e8e6e7;
@@ -26,6 +27,10 @@
 	background:none;
 	padding: 5px 10px;
 	outline:none;
+}
+.btn-success{
+	font-size:18px;
+	font-family:opensans bold;
 }
 #pane-list-options button:active,#pane-list-options button:focus{
 	background-color:#dddddd;
