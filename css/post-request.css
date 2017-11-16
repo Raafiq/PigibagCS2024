@@ -3,8 +3,8 @@
 }
 
 .section-header-underline{
-	height:6px;
-	width:118px;
+	height:4px;
+	width:80px;
 	background-color:#8dc0d3;
 }
 
@@ -25,6 +25,7 @@
 	color: #ffffff;
 	border-color: #8dc0d3;
 	font-family: opensans semibold;
+	font-size:18px;
 }
 
 .btn.btn-success:active {
@@ -78,4 +79,10 @@ p {
 
 #price p {
 	font-family: opensans bold;
+}
+
+@media screen and (max-width: 768px) {
+	.btn-success{
+		font-size:15px !important;
+	} 
 }

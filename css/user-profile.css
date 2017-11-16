@@ -24,6 +24,8 @@
 	border-radius:5px;
 	width:122px;
 	height:44px;
+	font-size:18px;
+	font-family:opensans bold;
 }
 #user-profile .user-details p{
 	margin:0;
