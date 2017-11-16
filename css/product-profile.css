@@ -118,3 +118,17 @@ p {
 	margin-top: 40px;
 	margin-bottom: 50px;
 }
+
+@media screen and (max-width: 768px) {
+	#traveller-detail {
+	border-right: none;
+	}
+	
+	#traveller-profile, #request-description, #requester-profile{
+		text-align:center !important;
+	}
+	#request-description h2 {
+		font-size: 20px;
+	}
+	#request-description 
+}
