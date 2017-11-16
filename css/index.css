@@ -8,15 +8,26 @@
 	z-index:1;
 	bottom:13%;
 	font-size: 16px;
-	font-family: opensans regular;
 	color:black;
 }
 #myCarousel .search-box button{
 	background-color:#8dc0d3;
 	color:white;
-	padding:7px 13px;
 	border:none;
 	outline:none;
+	height:inherit;
+	font-size:18px;
+	font-family: opensans bold;
+}
+#myCarousel .search-box .input-group{
+	height:40px;
+}
+#myCarousel .search-box input{
+	height:inherit;
+	font-family: opensans regular;
+}
+#myCarousel .search-box .input-group-btn{
+	height:inherit;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color:white;
@@ -31,59 +42,49 @@
 	overflow:hidden;
 }
 
+.search-mobile-bg{
+	display:none;
+}
+.search-mobile-bg img{
+	width:100%;
+}
 /* how it works */
 #how-it-works{
-	min-height:200px;
+	
 }
 .section-header{
-	margin-top: 5%;
 	text-align:center;
 }
 .section-header p{
-	font-size: 30px;
+	font-size: 24px;
 	font-family: opensans bold;
 	text-transform:uppercase;
-	margin-bottom:18px;
+	margin:0;
 }
 .section-header-underline{
-	height:6px;
-	width:118px;
+	height:4px;
+	width:80px;
 	background-color:#8dc0d3;
 	margin:0 auto;
+	margin-top:10px;
+}
+.section-div{
+	padding:30px 0;
+	min-height:200px;
 }
 #how-it-works .section-content{
 	display:table;
 	margin:auto;
-	margin-top:5%;
+	margin-top:30px;
 }
 #how-it-works .section-content img{
 	width:100%;
-	margin-bottom:5%;
-}
-
-.learn-more{
-	text-align:center;
-}
-.learn-more button{
-	border:none;
-	background-color: #8dc0d3;
-	outline:none;
-	margin:0;
-	padding:0;
-	width:266px;
-	height:51px;
-	border-radius: 25px;
-	font-size:27.6px;
-	font-family:opensans bold;
-	color:white;
-	margin-top:5%;
-	margin-bottom:5%;
+	margin-bottom:30px;
 }
 
 
 /*why us section*/
 #why-us{
-	min-height:200px;
 	overflow:hidden;
 	background-image:url(../images/whyus-background.png);
 	background-size:cover;
@@ -92,18 +93,19 @@
 	text-align:center;
 	font-family: opensans regular;
 	font-size:18px;
-	margin-top:32px;
+	margin-top:30px;
 }
 #why-us .row{
 	margin:0;
-	margin: 31px auto 0;
+	margin: 30px auto 0;
 }
 #why-us .row div{
 	text-align:center;
 }
 #why-us .row div h3{
 	font-family:opensans semibold;
-	font-size:18px;
+	font-size:20px;
+	min-height:44px;
 }
 #why-us .row div p{
 	font-family:opensans regular;
@@ -120,7 +122,7 @@
 	overflow:hidden;
 }
 #browse-by-countries .section-content{
-	margin-top:5%;
+	margin-top:30px;
 }
 #browse-by-countries .row{
 	margin:0;
@@ -128,6 +130,7 @@
 #browse-by-countries .row div{
 	text-align:center;
 	margin-bottom:10px;
+	padding:0 5px;
 }
 #browse-by-countries .row div h3{
 	font-family:opensans semibold;
@@ -140,25 +143,24 @@
 #browse-by-countries img{
 	max-height:100%;
 	max-width:100%;
+	width:100%;
 	border-radius:5px;
 }
 .show-more{
 	text-align:center;
 }
 .show-more button{
-	border:none;
-	background-color: #8dc0d3;
-	outline:none;
-	margin:0;
-	padding:0;
-	width:266px;
-	height:51px;
-	border-radius: 25px;
-	font-size:27.6px;
-	font-family:opensans bold;
-	color:white;
-	margin-top:5%;
-	margin-bottom:5%;
+	border: none;
+    background-color: #8dc0d3;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    height: 42px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: opensans bold;
+    color: white;
 }
 
 /*popular request*/
@@ -167,12 +169,12 @@
 	background-color:#f8f8f8;
 	overflow:hidden;
 }
-#popular-requests ul{
-	margin-top:5%;
+#popular-requests .nav{
 	padding-left:30px;
+	margin-top:30px;
 }
 #popular-requests .section-content{
-	margin-top:5%;	
+	margin-top:30px;	
 }
 #popular-requests li>a{
 	color:#4b4b4b;
@@ -184,6 +186,7 @@
 #popular-requests img{
 	max-height:100%;
 	max-width:100%;
+	width:100%;
 	border-radius:5px;
 }
 #popular-requests .dropdown button{
@@ -194,8 +197,8 @@
 	border-radius:5px;
 	padding:7px 13px;
 }
-.nav-tabs{
-	border-bottom:1px solid #a8a8a8;
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: #f8f8f8;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
@@ -206,11 +209,11 @@
 #popular-requests .row{
 	margin:0;
 	width:100%;
-	
 }
 #popular-requests .row div{
 	text-align:center;
 	margin-bottom:10px;
+	padding:0 5px;
 }
 #popular-requests .row div h3{
 	font-family:opensans semibold;
@@ -219,6 +222,17 @@
 #popular-requests .row div p{
 	font-family:opensans regular;
 	font-size:13px;
+}
+#popular-requests .show-more{
+	margin-top:20px;
+}
+
+
+#popular-requests .dropdown ul{
+	width:70%;
+	margin-left:15%;
+	margin-top:0;
+	padding:0;
 }
 
 /*reviews*/
@@ -237,11 +251,11 @@
 #reviews-carousel .row{
 	margin:0;
 	width:73%;
-	margin: 5% auto 0;
+	margin:0 auto;
 }
 #reviews-carousel .row div{
 	text-align:center;
-	margin-bottom:5%;
+	margin-top: 30px;
 }
 #reviews-carousel .row div h3{
 	font-family:opensans semibold;
@@ -261,50 +275,42 @@
 	min-height:100px;
 	overflow:hidden;
 	background-image:url(../images/subscribe-background.png);
+	background-size:cover;
 }
 #stay-in-touch .section-header-detail{
 	font-family:opensans regular;
-	font-size:14.5px;
+	font-size:20px;
 }
-#stay-in-touch .section-content{
-	margin-top:5%;
-	margin-bottom:5%;
+#stay-in-touch .search-box{
+	margin-top:30px;
 }
-#stay-in-touch input{
-	border:none;
-	outline:none;
-	font-size:16px;
-	font-family:opensans regular;
-	padding:8px 30px;
-	width:80%;
-	float:left;
-	border:1px solid #dddddd;
-}
-#stay-in-touch .input-group-addon{
-	border:none;
-	width:20%;
-	outline:none;
+
+#stay-in-touch .search-box button{
 	background-color:#8dc0d3;
 	color:white;
-	font-size:16px;
-	font-family:opensans regular;
-	padding:12px 0;
-	float:left;
+	border:none;
+	outline:none;
+	height:inherit;
+	font-size:18px;
+	font-family: opensans bold;
 }
-#stay-in-touch ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color:black;
+#stay-in-touch .search-box .input-group{
+	height:40px;
 }
-#popular-requests .dropdown ul{
-	width:70%;
-	margin-left:15%;
-	margin-top:0;
-	padding:0;
+#stay-in-touch .search-box input{
+	height:inherit;
+	font-family: opensans regular;
 }
+#stay-in-touch .search-box .input-group-btn{
+	height:inherit;
+}
+
 #footer{
 	height:212px;
 	background-color:black;
 	overflow:hidden;
 }
+
 @media screen and (max-width: 992px) {
 	
 	
@@ -312,22 +318,27 @@
 @media screen and (max-width: 768px) {
 
 	#myCarousel .search-box{
-		bottom:0;
 		position:relative;
-		margin-top:5%;
+	}
+	#myCarousel .form-group{
+		margin-top:30px;
+		margin-bottom:0;
+	}
+	.search-box .input-group{
+		height:28px;
+	}
+	.search-box input{
+		font-size:13px;
+	}
+	.search-box button{
+		padding:0 9px;
+		font-size:13px;
+	}
+	#myCarousel .search-mobile-bg{
+		display:block;
 	}
 	#reviews-carousel .carousel-control .glyphicon{
 		font-size:24px;
-	}
-	#stay-in-touch input,#stay-in-touch .input-group-addon{
-		font-size:14px;
-	}
-	#stay-in-touch .input-group-addon{
-		width:25%;
-	}
-	#stay-in-touch input{
-		padding:9px 15px;
-		width:75%;
 	}
 	#popular-requests .nav{
 		display:none !important;
@@ -336,9 +347,15 @@
 		display:block !important;
 	}
 	#popular-requests .dropdown button{
-		    width: 70%;
-			margin: auto;
-			display: block;
-			margin-top: 5%;
+		width: 70%;
+		margin: auto;
+		display: block;
+		margin-top: 30px;
+		font-size:18px;
+		font-family:opensans bold;
+	}
+	.section-div{
+		padding-left:5px;
+		padding-right:5px;
 	}
 }

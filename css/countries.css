@@ -1,3 +1,6 @@
+.content{
+	padding-bottom:30px;
+}
 u1.breadcrumb {
 	padding-top:10px;
 }
@@ -5,7 +8,6 @@ u1.breadcrumb {
 #countries-banner {
 	width:100%;
 }
-
 #header {
 	padding-top:12px;
 	font-size:24px;
@@ -26,34 +28,50 @@ u1.breadcrumb {
 	margin-top:25px;
 	
 }
-
-.btn {
-	background-color:#8dc0d3;
-	color:white;
-
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #262626;
+    text-decoration: none;
+    background-color: #f8f8f8;
 }
 
-.btn.btn-default.dropdown-toggle {
+#search button{
 	background-color:#8dc0d3;
 	color:white;
+	border:none;
+	outline:none;
+	height:inherit;
+	font-size:18px;
+	font-family: opensans bold;
+}
+#search .input-group{
+	height:40px;
+}
+#search input{
+	height:inherit;
+	font-family: opensans regular;
+}
+#search .input-group-btn{
+	height:inherit;
+}
+#search .form-group{
+	margin-bottom:0;
 }
 
-.listings{
-	width:83.33%;
+
+
+.listings div{
 	margin:auto;
-	margin-top:15px;	
-	
+	margin-top:30px;	
 }
 
 .listings img{
-	max-width: 100%;
-	padding-top: 18px;
-	padding-bottom: 18px;
+	width: 100%;
 }
 
-#space-for-footer {
-	height:30px;
-	background-color:#ffffff;
+#footer{
+	height:212px;
+	background-color:black;
+	overflow:hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -61,5 +79,21 @@ u1.breadcrumb {
 	
 }
 @media screen and (max-width: 768px) {
-
+	#countries-banner{
+		display:none;
+	}
+	#mobile-countries-banner{
+		display:block !important;
+		width:100%;
+	}
+	#search .input-group{
+		height:34px;
+	}
+	#search input{
+		font-size:14px;
+	}
+	#search button{
+		padding:0 9px;
+		font-size:16px;
+	}
 }

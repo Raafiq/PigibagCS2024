@@ -51,13 +51,27 @@ body{
 	font-size: 16px;
 	text-transform:uppercase;
 	font-family:opensans semibold;
-	color:#8dc0d3 !important;
+	color:#337ab7 !important;
 }
 .navbar-fixed-top{
 	background-color:#ffffff;
 }
 .navbar-fixed-top .dropdown-menu li>a{
 	font-size: 14px;
+}
+input:hover{
+	border-color:#66afe9;
+}
+.btn-hover-effect:hover{
+	background-color:#243d56 !important;
+	color:white !important;
+}
+.btn-hover-effect:focus{
+	background-color:#243d56 !important;
+	color:white !important;
+}
+.img-hover-effect:hover{
+	opacity:0.8 !important;
 }
 h3{
 	font-family:opensans semibold;

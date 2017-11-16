@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <title>categories</title>
 <link rel="stylesheet" href="css/categories.css">
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -44,17 +45,19 @@
 					<li class="dropdown ">
 						<a class="test dropdown-toggle" data-toggle="dropdown" tabindex="-1" href="#">My Account<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="user-profile.html">Settings</a></li>
+							<li><a href="user-profile.html">Profile</a></li>
 							<li><a href="chat.html">Chat</a></li>
 							<li><a href="status.html">Request Status</a></li>
+							<li><a href="login-signup.html">Logout</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<div class="container-fluid">
+	<div class="content">
 		<img src="images/category-banner.png" id="category-banner">
+		<img src="images/category-mobile.png" id="mobile-category-banner" style="display:none">
 		<div class="row">
 			<div class="col-md-6 col-md-offset-1 col-xs-offset-1" style="background-color:#ffffff;">
 				<div id="breadcrumb_top">
@@ -70,20 +73,30 @@
 		</div>
 		<div class="row" id="search">
 			<form method="get" id="searchForm" action="search">
-				<div class="form-group col-md-6 col-md-push-5 col-sm-12 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 margin-top-20">
+				<div class="form-group col-md-6 col-md-push-5 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 margin-top-20">
 					<div class=input-group>
 						<div class="input-group-btn">
-				        	<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Request<span class="caret"></span></button>
+				        	<button type="button" class="btn btn-default dropdown-toggle btn-hover-effect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Request<span class="caret"></span></button>
 				        	<ul class="dropdown-menu">
-				          		<li><a href="#">All</a></li>
-				          		<li><a href="#">Category</a></li>
-				          		<li><a href="#">Country</a></li>
-				          		<li><a href="#">Recommendation</a></li>
+				          		<li><a href="#">All Categories</a></li>
+								<li><a href="#">Food & Drinks</a></li>
+								<li><a href="#">Health & Beauty</a></li>
+								<li><a href="#">Women's Fashion & Accessories</a></li>
+								<li><a href="#">Men's Fashion & Accessories</a></li>
+								<li><a href="#">Collectibles</a></li>
+								<li><a href="#">Home & Kitchen</a></li>
+								<li><a href="#">Stationary</a></li>
+								<li><a href="#">Tech</a></li>
+								<li><a href="#">Mums & Babies</a></li>
+								<li><a href="#">Books & Magazines</a></li>
+								<li><a href="#">Toys & Games</a></li>
+								<li><a href="#">Sports</a></li>
+								<li><a href="#">Others</a></li>
 				        	</ul>
 				        </div>
 						<input type="text" class="form-control" placeholder="Search...">
 						<div class="input-group-btn">
-							<button type="button" class="btn">Search</button>
+							<button type="button" class="btn btn-hover-effect">Search</button>
 						</div>
 					</div>
 				</div>
@@ -91,44 +104,44 @@
 		</div>
 		
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-1.png" id="category-1">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-2.png" id="category-2">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-3.png" id="category-3">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-4.png" id="category-4">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-5.png" id="category-5">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-6.png" id="category-6">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-7.png" id="category-7">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-8.png" id="category-8">
 			</div>
 		</div>
 		<div class="container listings">
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-9.png" id="category-9">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-10.png" id="category-10">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-11.png" id="category-11">
 			</div>
-			<div class="col-xs-6 col-sm-3">
+			<div class="col-xs-6 col-sm-3 img-hover-effect">
 				<img src="images/category-12.png" id="category-12">
 			</div>
 		</div>

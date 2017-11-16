@@ -18,8 +18,12 @@
 	float:right;
 	margin-top:2%;
 	margin-bottom:2%;
-	margin-right:10%;
+	margin-right:160px;
 	text-transform:uppercase;
+}
+#new-request a:hover{
+	color:#252525;
+	background-color:#e6e6e6;
 }
 button{
 	border:none;
@@ -84,6 +88,29 @@ ul{
 #browse-options{
 	margin:0;
 }
+.search-box button{
+	background-color:#8dc0d3;
+	color:white;
+	border:none;
+	outline:none;
+	height:inherit;
+	font-size:18px;
+	font-family: opensans bold;
+}
+.search-box .input-group{
+	height:40px;
+}
+.search-box input{
+	height:inherit;
+	font-family: opensans regular;
+}
+.search-box .input-group-btn{
+	height:inherit;
+}
+
+.search-box .form-group{
+	margin-bottom:0;
+}
 .browse-options-bar{
 	font-family:opensans regular;
 	font-size:15px;
@@ -102,13 +129,13 @@ ul{
 	border:1px solid #777777;
 }
 .browse-options-bar .sort-by{
-	text-align:left;
 }
 .browse-options-bar .glyphicon{
 	color:#d0d0d0;
 }
 .browse-options-bar .open>.dropdown-menu{
 	margin-left:12px !important;
+	margin-top:7px;
 }
 #browse-listing{
 	min-height:500px;
@@ -143,6 +170,10 @@ ul{
 	border-radius:5px;
 	font-size:19px;
 }
+.page-indicators .active{
+	background-color:#243d56;
+	color:white;
+}
 .page-indicators .listing-row{
 	display:table;
 }
@@ -154,15 +185,12 @@ ul{
 		font-size:14px;
 	}
 	#new-request a{
-		margin-right:4%;
+		margin-right:45px;
 		font-size:14px;
 	}
 	
 }
 @media screen and (max-width: 770px) {
-	.search-box input{
-		padding-left:6%;
-	}
 	.search-box{
 		margin-top:20px;
 	}
@@ -183,5 +211,15 @@ ul{
 	}
 	.browse-options-bar .sort-by .dropdown button{
 		margin-left:16px;
+	}
+	.search-box .input-group{
+		height:34px;
+	}
+	.search-box input{
+		font-size:14px;
+	}
+	.search-box button{
+		padding:0 9px;
+		font-size:16px;
 	}
 }
